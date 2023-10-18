@@ -1,0 +1,178 @@
+// =============================================================================
+//
+// Waybar configuration
+//
+// Configuration reference: https://github.com/Alexays/Waybar/wiki/Configuration
+//
+// For display of symbols font ttf-nerd-fonts-symbols is required
+//
+// =============================================================================
+
+{
+  "layer": "top",
+  "height": 30,
+  "position": "top",
+  "modules-left": [
+    "sway/workspaces",
+    "sway/mode"
+    //  "custom/wf-recorder"
+
+  ],
+  "modules-center": [
+    "sway/window"
+  ],
+  "modules-right": [
+    "tray",
+    "cpu",
+    "temperature",
+    "memory",
+    "disk",
+    "backlight",
+    "pulseaudio",
+    "network",
+    //    "bluetooth",
+    "idle_inhibitor",
+    "battery",
+    "clock"
+  ],
+  "backlight": {
+    "format": "{icon} {percent}%",
+    "format-icons": [
+      "󱓤",
+      "󰖙"
+    ],
+    "on-scroll-down": "swaymsg exec \\$brightness_down",
+    "on-scroll-up": "swaymsg exec \\$brightness_up"
+    },
+  "battery": {
+    "format": "{capacity}% {icon}",
+    "format-icons": [
+      "󰁺",
+      "󰁻",
+      "󰁼",
+      "󰁽",
+      "󰁾",
+      "󰁿",
+      "󰂀",
+      "󰂁",
+      "󰂂",
+      "󰁹"
+    ],
+    "format-charging": "{capacity}% 󰂄",
+    "interval": 30,
+    "states": {
+      "warning": 30,
+      "critical": 10
+    },
+    "tooltip": false
+  },
+  "clock": {
+    "interval": 60,
+    "format": "{:%a %d %b %H:%M}",
+    "tooltip": false
+  },
+  "cpu": {
+    "interval": 5,
+    "format": "{usage}% {icon}",
+    "format-icons": [
+      ""
+    ],
+    "states": {
+      "warning": 80,
+      "critical": 90
+    },
+    "on-click": "swaymsg exec '$term -e btop'",
+    "tooltip": true
+  },
+  "disk": {
+    "interval": 30,
+    "format": "{free} ",
+    "path": "/home",
+    "on-click": "swaymsg exec '$file_manager'"
+  },
+  "idle_inhibitor": {
+    "format": "{icon}",
+    "format-icons": {
+      "activated": "󰈈",
+      "deactivated": "󰈉"
+    },
+    "tooltip": false
+  },
+  "memory": {
+    "interval": 10,
+    "format": "{}% ",
+    "states": {
+      "warning": 70,
+      "critical": 90
+    },
+    "on-click": "swaymsg exec '$term -e btop'",
+    "tooltip": true
+  },
+  "network": {
+    "format": "{icon}",
+    "on-click": "swaymsg exec '$term -e nmtui'",
+    "format-icons": {
+      "ethernet": "󰈀",
+      "wifi": "󰖩",
+      "disconnected": ""
+    },
+    "tooltip-format-wifi": "{ipaddr}/{cidr} ({signalStrength}%) {icon}",
+    "tooltip-format-ethernet": "{ipaddr}/{cidr} {icon}",
+    "tooltip-format-disconnected": "Disconnected",
+    "max-length": 50
+  },
+  "pulseaudio": {
+    "format": "{volume}% {icon} {format_source}",
+    "format-bluetooth": "{volume}% {icon}󰂯 {format_source}",
+    "format-muted": "󰖁 {format_source}",
+    "format-source": "󰍬",
+    "format-source-muted": "󰍭",
+    "format-icons": {
+      "default": [
+        "󰕿",
+        "󰖀",
+        "󰕾"
+      ]
+    },
+    "scroll-step": 5,
+    "on-click": "pavucontrol",
+    "on-click-right": "pactl set-source-mute @DEFAULT_SOURCE@ toggle",
+
+  },
+  "temperature": {
+    "critical-threshold": 80,
+    "format": "{temperatureC}󰔄 {icon}",
+    "format-icons": [
+      "󱃃",
+      "󱃂"
+    ],
+    "on-click": "swaymsg exec '$term -e btop'",
+    "interval": 10,
+    "tooltip": true
+  },
+  "tray": {
+    "icon-size": 18
+  },
+  "sway/mode": {
+    "format": "󰄾 {}",
+    "tooltip": false
+  },
+  "sway/window": {
+    "max-length": 80,
+    "tooltip": false
+  },
+  "sway/workspaces": {
+    "format": "{name}",
+    "disable-scroll": true
+  },
+  //"custom/wf-recorder": {
+  //  "interval": "once",
+  //  "return-type": "json",
+  //  "format": "{}",
+  //  "tooltip-format": "{tooltip}",
+  //  "exec": "echo '{\"class\": \"recording\",\"text\":\"󰑊\",\"tooltip\":\"press $mod+Esc to stop recording\"}'",
+  //  "exec-if": "pgrep wf-recorder",
+  //  "on-click": "killall -s SIGINT wf-recorder",
+  //  "signal": 8
+  //}
+}

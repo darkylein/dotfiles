@@ -74,9 +74,9 @@ pacman -S steam
 
 ## Tweaks
 
-Tweaks which are currently NOT integrated into the install-cript.
+Tweaks which are currently NOT integrated into the install-script.
 
-- Set parallel downloads for pacman to 10
+- Acivate and set parallel downloads for pacman to value 10
 ```bash
 sudo sed -i 's/^#ParallelDownloads = 5/ParallelDownloads = 10/' /etc/pacman.conf
 ```

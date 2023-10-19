@@ -45,14 +45,14 @@ These packages are not essential for the functionality of this custom sway setup
 ### Pacman
 
 ```bash
-pacman -S '\
+sudo pacman -S \
 figlet \
 imagemagick ghostscript \
 krita \
 inkscape \
 libreoffice-fresh \
 keepassxc \
-telegram-desktop'
+telegram-desktops
 ```
 
 ### Yay
@@ -65,7 +65,7 @@ yay
 
 - Choose vulkan-radeon and than lib32-vulkan-radeon in installation
 ```bash
-pacman -S steam
+sudo pacman -S steam
 ```
 
 ### Extended Controller Support (xpadneo)

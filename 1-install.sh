@@ -87,7 +87,6 @@ packagesPacman=(
     "nano"
     "neovim"
     "polkit"
-    "psst-git"
     "starship"
     "swaybg"
     "swayidle"
@@ -102,6 +101,7 @@ packagesPacman=(
 
 packagesYay=(
     "librewolf-bin"
+    "psst-git"
 );
 
 _installPackagesPacman "${packagesPacman[@]}";

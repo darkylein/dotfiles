@@ -102,3 +102,4 @@ ENV variables which are set before sway starts
 - Add full QT- and GTK-Theme support
 - Add setup of default applications
 - Add screenshots with grim & slurp to sway/waybar and maybe screen recording
+- ARD file extensions to config files, wäre it is possible (.cfg, jsonc, etc.)

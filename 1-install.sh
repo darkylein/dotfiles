@@ -111,4 +111,4 @@ _installPackagesYay "${packagesYay[@]}";
 # ------------------------------------------------------
 clear
 echo "DONE!"
-echo "NEXT: Please continue with 2-install-hyprland.sh and/or 2-install-qtile.sh"
+echo "NEXT: Please continue with 2-dotfiles.sh"

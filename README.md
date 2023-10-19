@@ -1,6 +1,7 @@
 # dotfiles
 
 ## Common Packages
+
 - Browser: LibreWolf
 - Editor: nano, neovim
 - Filemanager: Thunar
@@ -11,6 +12,7 @@
 - xdg-user-dirs (Tool to create default directories in /home)
 
 ## Sway
+
 - Background Manager: swaybg
 - Icons: Nerd Fonts Symbols
 - Idle Manager: swayidle
@@ -51,16 +53,19 @@ yay
 ```
 
 ## Steam
+
 - Choose vulkan-radeon and than lib32-vulkan-radeon in installation
 ```bash
 pacman -S steam
 ```
 
 ## Extended Controller Support (xpadneo)
+
 - Make sure, that the controller has current firmware (Update over Xbox Accessories app from Microsoft-Store)
 - Run installation script from https://github.com/atar-axis/xpadneo
 
 ## Tweaks
+
 Tweaks which are currently NOT integrated into the install-cript.
 
 - Set parallel downloads for pacman to 10
@@ -80,16 +85,19 @@ echo "blacklist pcspkr" | sudo tee /etc/modprobe.d/nobeep.conf
 
 
 ## Arch Installation
+
 Tweaks which are specific to the arch linux installation.
 
 - Use the archinstall script for the installation
 
 ## ENV Variables
+
 ENV variables which are set before sway starts
 - MOZ_ENABLE_WAYLAND=1 (Start LibreWolf in wayland mode)
 
 ## TODO
-- Get inspired by Stephan Raabe's dotfiles (https://gitlab.com/stephan-raabe/dotfiles/-/tree/main)
+
+- Get inspired by Stephan Raabe's dotfiles (https://gitlab.coßm/stephan-raabe/dotfiles/-/tree/main)
 - Add install script
 - Add notifications daemon Mike mako to sway (https://github.com/emersion/mako)
 - Revamp fuzzel config

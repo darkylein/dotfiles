@@ -90,8 +90,11 @@ ENV variables which are set before sway starts
 
 ## TODO
 - Get inspired by Stephan Raabe's dotfiles (https://gitlab.com/stephan-raabe/dotfiles/-/tree/main)
+- Add install script
+- Add notifications daemon Mike mako to sway (https://github.com/emersion/mako)
 - Revamp fuzzel config
 - Revamp waybar and integrate color schemes (https://github.com/catppuccin/catppuccin)
+- Add soft background to modules in waybar
 - Setup starship prompt with alacritty
 - Integrate autostart sway with login (https://wiki.archlinux.org/title/Sway)
 - Extend arch Installation Tweaks AND save the archinstall script config in this project

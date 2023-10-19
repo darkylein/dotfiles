@@ -2,24 +2,31 @@
 
 ## Common Packages
 
+- Bluetooth Manager: blueman
 - Browser: LibreWolf
 - Editor: nano, neovim
 - Filemanager: Thunar
 - Image Viewer: imv
+- Media Player: VLC Media Player
 - Menu: Fuzzel
+- Music Player: mpv
+- Network Manager: NetworkManager (nmcli/nmtui)
+- Wayland Notification Daemon: mako
 - Pacman Wrapper: yay
+- Prompt: Starship
 - Terminal: Alacritty
-- xdg-user-dirs (Tool to create default directories in /home)
+- XDG user directories (Tool to create default directories in /home)
 
 ## Sway
 
-- Background Manager: swaybg
+Packages which are strictly required for this sway setup.
+
+- Wayland Background Manager: swaybg
 - Icons: Nerd Fonts Symbols
-- Idle Manager: swayidle
-- Lock Manager: swaylock
+- Wayland Idle Manager: swayidle
+- Wayland Lock Manager: swaylock
 - Status Bar: waybar
 - polkit (Required on Arch, to grant sway access to your seat)
-- Network Manager: NetworkManager (nmcli/nmtui)
 - Wayland X Server: Xwayland
 
 ## Additional Packages (Not installed automatically)
@@ -38,6 +45,7 @@ These packages are not essential for the functionality of this custom sway setup
 
 ```bash
 pacman -S '\
+figlet \
 imagemagick ghostscript \
 krita \
 inkscape \
@@ -52,14 +60,14 @@ telegram-desktop'
 yay 
 ```
 
-## Steam
+### Steam
 
 - Choose vulkan-radeon and than lib32-vulkan-radeon in installation
 ```bash
 pacman -S steam
 ```
 
-## Extended Controller Support (xpadneo)
+### Extended Controller Support (xpadneo)
 
 - Make sure, that the controller has current firmware (Update over Xbox Accessories app from Microsoft-Store)
 - Run installation script from https://github.com/atar-axis/xpadneo
@@ -99,7 +107,7 @@ ENV variables which are set before sway starts
 
 - Get inspired by Stephan Raabe's dotfiles (https://gitlab.coßm/stephan-raabe/dotfiles/-/tree/main)
 - Add install script
-- Add notifications daemon Mike mako to sway (https://github.com/emersion/mako)
+- Integrate notifications daemon mako to sway (https://github.com/emersion/mako)
 - Revamp fuzzel config
 - Revamp waybar and integrate color schemes (https://github.com/catppuccin/catppuccin)
 - Add soft background to modules in waybar
@@ -109,5 +117,8 @@ ENV variables which are set before sway starts
 - Set ENV vars before sway start or in /etc/environment (https://wiki.archlinux.org/title/Environment_variables)
 - Add full QT- and GTK-Theme support
 - Add setup of default applications
-- Add screenshots with grim & slurp to sway/waybar and maybe screen recording
+- Add screenshots with grim & slurp & swappy to sway/waybar and maybe screen recording
 - Add file extensions to config files, wäre it is possible (.cfg, jsonc, etc.)
+- Give XDG Desktop Portal a try
+- Give freerdp a try
+- Give swww (Animated background)

@@ -97,3 +97,4 @@ ENV variables which are set before sway starts
 - Set ENV vars before sway start or in /etc/environment (https://wiki.archlinux.org/title/Environment_variables)
 - Add full QT- and GTK-Theme support
 - Add setup of default applications
+- Add screenshots with grim & slurp to sway/waybar and maybe screen recording

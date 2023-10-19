@@ -14,7 +14,7 @@
 # Load Library
 # ------------------------------------------------------
 source "$(dirname "$0")/scripts/library.sh"
-clear
+#clear
 echo ""
 echo "  ____                        ___           _        _ _"
 echo " / ___|_      ____ _ _   _   |_ _|_ __  ___| |_ __ _| | |"
@@ -38,7 +38,7 @@ else
     cd ~/yay || exit
     makepkg -si
     cd ~/dotfiles/ || exit
-    clear
+#    clear
     echo ""
     echo "  ____                        ___           _        _ _"
     echo " / ___|_      ____ _ _   _   |_ _|_ __  ___| |_ __ _| | |"
@@ -109,6 +109,6 @@ _installPackagesYay "${packagesYay[@]}";
 # ------------------------------------------------------
 # DONE
 # ------------------------------------------------------
-clear
+#clear
 echo "DONE!"
 echo "NEXT: Please continue with 2-dotfiles.sh"

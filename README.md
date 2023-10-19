@@ -89,6 +89,7 @@ ENV variables which are set before sway starts
 - MOZ_ENABLE_WAYLAND=1 (Start LibreWolf in wayland mode)
 
 ## TODO
+- Get inspired by Stephan Raabe's dotfiles (https://gitlab.com/stephan-raabe/dotfiles/-/tree/main)
 - Revamp fuzzel config
 - Revamp waybar and integrate color schemes (https://github.com/catppuccin/catppuccin)
 - Setup starship prompt with alacritty

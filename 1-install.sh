@@ -87,6 +87,7 @@ packagesPacman=(
     "nano"
     "neovim"
     "polkit"
+    "psst-git"
     "starship"
     "swaybg"
     "swayidle"

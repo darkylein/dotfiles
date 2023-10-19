@@ -14,6 +14,7 @@
 - Wayland Notification Daemon: mako
 - Pacman Wrapper: yay
 - Prompt: Starship
+- Spotify Wrapper: psst
 - Terminal: Alacritty
 - XDG user directories (Tool to create default directories in /home)
 

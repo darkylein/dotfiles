@@ -2,7 +2,7 @@
 
 set $mode_system System: (l) lock, (e) logout, (s) suspend, (r) reboot, (S) shutdown, (R) UE>
 mode "$mode_system" {
-    bindsym l mode "default", exec $locking
+    bindsym l mode "default", exec "$locking"
     bindsym e exec loginctl terminate-user $USER
     bindsym s mode "default", exec "$locking; systemctl suspend"
     bindsym r exec systemctl reboot

@@ -90,7 +90,7 @@ ENV variables which are set before sway starts
 
 ## TODO:
 - Revamp fuzzel config
-- Revamp waybar and integrate color schemes (see arch issues)
+- Revamp waybar and integrate color schemes (https://github.com/catppuccin/catppuccin)
 - Setup starship prompt with alacritty
 - Integrate autostart sway with login (https://wiki.archlinux.org/title/Sway)
 - Extend arch Installation Tweaks AND save the archinstall script config in this project

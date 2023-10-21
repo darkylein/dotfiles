@@ -1,1 +1,2 @@
-gtk-icon-theme-name="Dracula"
+gtk-icon-theme-name = "Dracula"
+gtk-theme-name = "Dracula"

@@ -113,7 +113,7 @@ ENV variables which are set before sway starts
 
 ## TODO
 
-- Get inspired by Stephan Raabe's dotfiles (https://gitlab.coßm/stephan-raabe/dotfiles/-/tree/main)
+- Get inspired by Stephan Raabe's dotfiles (https://gitlab.com/stephan-raabe/dotfiles/-/tree/main)
 - Add install script
 - Integrate notifications daemon mako to sway (https://github.com/emersion/mako)
 - Revamp fuzzel config

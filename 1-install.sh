@@ -79,6 +79,7 @@ echo "-> Install main packages"
 packagesPacman=(
     "alacritty"
     "blueman"
+    "dosfstools"
     "fuzzel"
     "imv"
     "mako"
@@ -88,6 +89,7 @@ packagesPacman=(
     "neovim"
     "polkit"
     "starship"
+    "sway"
     "swaybg"
     "swayidle"
     "swaylock"
@@ -101,7 +103,6 @@ packagesPacman=(
 
 packagesYay=(
     "librewolf-bin"
-    "psst-git"
 );
 
 _installPackagesPacman "${packagesPacman[@]}";

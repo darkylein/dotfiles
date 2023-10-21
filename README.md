@@ -58,7 +58,8 @@ telegram-desktops
 ### Yay
 
 ```bash
-yay 
+yay -S \
+psst-git
 ```
 
 ### Steam

@@ -15,29 +15,26 @@
   "modules-left": [
     "sway/workspaces",
     "sway/mode"
-    //  "custom/wf-recorder"
   ],
   "modules-center": [
     "clock"
   ],
   "modules-right": [
     "tray",
-    "hardware",
+    "group/hardware",
     "backlight",
     "network",
-    //    "bluetooth",
     "idle_inhibitor",
-    "battery",
-    "pulseaudio",
+    "pulseaudio"
   ],
-  "group/hardware" {
-  "orientation": "horizontal",
-  "modules": [
-    "cpu",
-    "temperature",
-    "memory",
-    "disk"
-  ]
+  "group/hardware": {
+    "orientation": "horizontal",
+    "modules": [
+      "cpu",
+      "temperature",
+      "memory",
+      "disk"
+    ]
   },
   "backlight": {
     "format": "{icon} {percent}%",

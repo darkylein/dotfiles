@@ -1,0 +1,23 @@
+# Import other configs
+import:
+  - ~.config/alacritty/color-theme.yml
+
+scrolling:
+  history: 10000
+  multiplier: 3
+
+# Font configuration
+font:
+  normal:
+    family: JetBrainsMono Nerd Font
+    style: Regular
+  bold:
+    family: JetBrainsMono Nerd Font
+    style: bold
+  italic:
+    family: JetBrainsMono Nerd Font
+    style: italic
+  bold_italic:
+    family: JetBrainsMono Nerd Font
+    style: bold-italic
+  size: 13.0

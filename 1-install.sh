@@ -93,7 +93,7 @@ packagesPacman=(
     "swaybg"
     "swayidle"
     "swaylock"
-    "thunar" "gvfs" "thunar-volman" "thunar-archive-plugin" "xarchiver" "thumbler"
+    "thunar" "gvfs" "thunar-volman" "thunar-archive-plugin" "xarchiver" "tumbler"
     "ttf-nerd-fonts-symbols"
     "vlc"
     "waybar"

@@ -90,7 +90,7 @@ packagesPacman=(
     "nano"
     "neovim"
     "polkit"
-    "qt5ct" "qt6ct" "qt5ct" "qt6ct"
+    "qt5ct" "qt6ct"
     "starship"
     "sway"
     "swaybg"

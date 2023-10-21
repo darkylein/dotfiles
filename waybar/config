@@ -16,25 +16,29 @@
     "sway/workspaces",
     "sway/mode"
     //  "custom/wf-recorder"
-
   ],
   "modules-center": [
-    "sway/window"
+    "clock"
   ],
   "modules-right": [
     "tray",
-    "cpu",
-    "temperature",
-    "memory",
-    "disk",
+    "hardware",
     "backlight",
-    "pulseaudio",
     "network",
     //    "bluetooth",
     "idle_inhibitor",
     "battery",
-    "clock"
+    "pulseaudio",
   ],
+  "group/hardware" {
+  "orientation": "horizontal",
+  "modules": [
+    "cpu",
+    "temperature",
+    "memory",
+    "disk"
+  ]
+  },
   "backlight": {
     "format": "{icon} {percent}%",
     "format-icons": [
@@ -155,10 +159,6 @@
   },
   "sway/mode": {
     "format": "󰄾 {}",
-    "tooltip": false
-  },
-  "sway/window": {
-    "max-length": 80,
     "tooltip": false
   },
   "sway/workspaces": {

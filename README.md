@@ -54,7 +54,7 @@ krita \
 inkscape \
 libreoffice-fresh \
 keepassxc \
-telegram-desktops
+telegram-desktop
 ```
 
 ### Yay

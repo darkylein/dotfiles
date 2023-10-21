@@ -75,14 +75,14 @@ _installSymLink .bashrc ~/.bashrc ~/dotfiles/bash/.bashrc ~/.bashrc
 _installSymLink alacritty ~/.config/alacritty ~/dotfiles/alacritty/ ~/.config
 _installSymLink fuzzel ~/.config/fuzzel ~/dotfiles/fuzzel/ ~/.config
 
-#echo "-------------------------------------"
-#echo "-> Install GTK dotfiles"
-#echo "-------------------------------------"
-#echo ""
-#
-#_installSymLink .gtkrc-2.0 ~/.gtkrc-2.0 ~/dotfiles/gtk/.gtkrc-2.0 ~/.gtkrc-2.0
-#_installSymLink gtk-3.0 ~/.config/gtk-3.0 ~/dotfiles/gtk/gtk-3.0/ ~/.config/
-#_installSymLink gtk-4.0 ~/.config/gtk-4.0 ~/dotfiles/gtk/gtk-4.0/ ~/.config/
+echo "-------------------------------------"
+echo "-> Install GTK dotfiles"
+echo "-------------------------------------"
+echo ""
+
+_installSymLink .gtkrc-2.0 ~/.gtkrc-2.0 ~/dotfiles/gtk/.gtkrc-2.0 ~/.gtkrc-2.0
+_installSymLink gtk-3.0 ~/.config/gtk-3.0 ~/dotfiles/gtk/gtk-3.0/ ~/.config/
+_installSymLink gtk-4.0 ~/.config/gtk-4.0 ~/dotfiles/gtk/gtk-4.0/ ~/.config/
 
 echo "-------------------------------------"
 echo "-> Install Sway dotfiles"

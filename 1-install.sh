@@ -37,6 +37,7 @@ else
     git clone https://aur.archlinux.org/yay.git ~/yay
     cd ~/yay || exit
     makepkg -si
+    rm -f -r ~/yay
     cd ~/dotfiles/ || exit
 #    clear
     echo ""

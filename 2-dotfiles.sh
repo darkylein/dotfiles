@@ -71,7 +71,7 @@ echo "-> Install general dotfiles"
 echo "-------------------------------------"
 echo ""
 
-_installSymLink .bashrc ~/.bashrc ~/dotfiles/.bashrc ~/.bashrc
+_installSymLink .bashrc ~/.bashrc ~/dotfiles/bash/.bashrc ~/.bashrc
 _installSymLink alacritty ~/.config/alacritty ~/dotfiles/alacritty/ ~/.config
 _installSymLink fuzzel ~/.config/fuzzel ~/dotfiles/fuzzel/ ~/.config
 

@@ -31,7 +31,6 @@
     "orientation": "horizontal",
     "modules": [
       "cpu",
-      "temperature",
       "memory",
       "disk"
     ]
@@ -140,19 +139,9 @@
     "on-click-right": "pactl set-source-mute @DEFAULT_SOURCE@ toggle",
 
   },
-  "temperature": {
-    "critical-threshold": 80,
-    "format": "{temperatureC}󰔄 {icon}",
-    "format-icons": [
-      "󱃃",
-      "󱃂"
-    ],
-    "on-click": "swaymsg exec '$term -e btop'",
-    "interval": 10,
-    "tooltip": true
-  },
   "tray": {
-    "icon-size": 18
+    "icon-size": 18,
+    "spacing": 3
   },
   "sway/mode": {
     "format": "󰄾 {}",

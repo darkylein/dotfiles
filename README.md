@@ -6,6 +6,7 @@
 - Browser: LibreWolf
 - Editor: nano, neovim
 - Filemanager: Thunar (Inclusive some essential plug ins)
+- Font: JetBrainsMono Nerd Font
 - Image Viewer: imv
 - Media Player: VLC Media Player
 - Menu: Fuzzel
@@ -18,16 +19,17 @@
 - Terminal: Alacritty
 - XDG user directories (Tool to create default directories in /home)
 
-## Sway
+## Window Manager (Sway)
 
 Packages which are strictly required for this sway setup.
 
-- Wayland Background Manager: swaybg
 - Icons: Nerd Fonts Symbols
+- polkit (Required on Arch, to grant sway access to your seat)
+- Status Bar: waybar
+- Wayland Background Manager: swaybg
 - Wayland Idle Manager: swayidle
 - Wayland Lock Manager: swaylock
-- Status Bar: waybar
-- polkit (Required on Arch, to grant sway access to your seat)
+- Wayland Window Manager: sway
 - Wayland X Server: Xwayland
 
 ## Additional Packages (Not installed automatically)

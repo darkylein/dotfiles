@@ -93,6 +93,10 @@ echo -e "PKGEXT='.pkg.tar'\nSRCEXT='.src.tar'" >> ~/.makepkg.conf
 echo "blacklist pcspkr" | sudo tee /etc/modprobe.d/nobeep.conf
 ```
 
+### Daemons to be enabled
+- bluetooth
+- NetworkManager
+
 
 ## Arch Installation
 

@@ -5,7 +5,7 @@
 - Bluetooth Manager: blueman
 - Browser: LibreWolf
 - Editor: nano, neovim
-- Filemanager: Thunar
+- Filemanager: Thunar (Inclusive some essential plug ins)
 - Image Viewer: imv
 - Media Player: VLC Media Player
 - Menu: Fuzzel

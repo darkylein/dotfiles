@@ -15,6 +15,7 @@
 - Network Manager: NetworkManager (nmcli/nmtui)
 - Wayland Notification Daemon: mako
 - Pacman Wrapper: yay
+- Password Manager: KepassXC
 - Prompt: Starship
 - Spotify Wrapper: psst
 - Terminal: Alacritty
@@ -42,7 +43,6 @@ These packages are not essential for the functionality of this custom sway setup
 - 2D Editor: Krita
 - Vector Graphic Editor: InkScape
 - Office Suite: LibreOffice (fresh)
-- Password Manager: KepassXC
 - Telegram
 
 ### Pacman

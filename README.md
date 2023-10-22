@@ -17,6 +17,7 @@
 - Pacman Wrapper: yay
 - Password Manager: KepassXC
 - Prompt: Starship
+- Resource Monitor: btop
 - Spotify Wrapper: psst
 - Terminal: Alacritty
 - XDG user directories (Tool to create default directories in /home)

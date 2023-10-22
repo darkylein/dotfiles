@@ -80,6 +80,7 @@ echo "-> Install main packages"
 packagesPacman=(
     "alacritty"
     "blueman"
+    "btop"
     "dosfstools"
     "gtk2" "gtk3" "gtk4"
     "fuzzel"

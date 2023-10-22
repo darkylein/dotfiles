@@ -7,6 +7,7 @@
 - Editor: nano, neovim
 - Filemanager: Thunar (Inclusive some essential plug ins)
 - Font: JetBrainsMono Nerd Font
+- GTK Theme: Dracula
 - Image Viewer: imv
 - Media Player: VLC Media Player
 - Menu: Fuzzel
@@ -53,7 +54,6 @@ imagemagick ghostscript \
 krita \
 inkscape \
 libreoffice-fresh \
-keepassxc \
 telegram-desktop
 ```
 

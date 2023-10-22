@@ -84,6 +84,7 @@ packagesPacman=(
     "gtk2" "gtk3" "gtk4"
     "fuzzel"
     "imv"
+    "keepassxc"
     "mako"
     "mpv"
     "networkmanager"
@@ -105,7 +106,8 @@ packagesPacman=(
 );
 
 packagesYay=(
-    "librewolf-bin"
+  "dracula-gtk-theme"
+  "librewolf-bin"
 );
 
 _installPackagesPacman "${packagesPacman[@]}";

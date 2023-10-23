@@ -4,9 +4,9 @@
 
 - Bluetooth Manager: blueman
 - Browser: LibreWolf
+- Console Font: JetBrainsMono Nerd Font
 - Editor: nano, neovim
 - Filemanager: Thunar (Inclusive some essential plug ins)
-- Font: JetBrainsMono Nerd Font
 - GTK Theme: Dracula
 - Image Viewer: imv
 - Media Player: VLC Media Player

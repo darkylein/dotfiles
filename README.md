@@ -119,19 +119,11 @@ ENV variables which are set before sway starts
 ## TODO
 
 - Get inspired by Stephan Raabe's dotfiles (https://gitlab.com/stephan-raabe/dotfiles/-/tree/main)
-- Add install script
 - Integrate notifications daemon mako to sway (https://github.com/emersion/mako)
-- Revamp fuzzel config
-- Revamp waybar and integrate color schemes (https://github.com/catppuccin/catppuccin)
 - Add soft background to modules in waybar
-- Setup starship prompt with alacritty
 - Integrate autostart sway with login (https://wiki.archlinux.org/title/Sway)
 - Extend arch Installation Tweaks AND save the archinstall script config in this project
 - Set ENV vars before sway start or in /etc/environment (https://wiki.archlinux.org/title/Environment_variables)
-- Add full QT- and GTK-Theme support
-- Add setup of default applications
 - Add screenshots with grim & slurp & swappy to sway/waybar and maybe screen recording
-- Add file extensions to config files, wäre it is possible (.cfg, jsonc, etc.)
-- Give XDG Desktop Portal a try
+- Add file extensions to config files, where it's possible (.cfg, jsonc, etc.)
 - Give freerdp a try
-- Give swww (Animated background)

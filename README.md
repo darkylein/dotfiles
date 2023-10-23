@@ -127,3 +127,4 @@ ENV variables which are set before sway starts
 - Add screenshots with grim & slurp & swappy to sway/waybar and maybe screen recording
 - Add file extensions to config files, where it's possible (.cfg, jsonc, etc.)
 - Give freerdp a try
+- Integrate QT5/6 theme

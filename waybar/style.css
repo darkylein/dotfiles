@@ -50,6 +50,17 @@
   color: rgba(238, 46, 36, 1);
 }
 
+#clock,
+#hardware,
+#network,
+#idle_inhibitor,
+#pulseaudio,
+#battery,
+#tray,
+#workspaces {
+  margin: 0 5px;
+}
+
 window {
   background: rgba(0, 0, 0, 0);
 }
@@ -58,21 +69,8 @@ window {
   font-weight: bold;
 }
 
-#hardware,
-#network,
-#idle_inhibitor,
-#pulseaudio,
-#battery,
-#tray {
-  margin: 0 5px;
-}
-
 #pulseaudio {
-  min-width: 80px;
-}
-
-#workspaces {
-  margin: 0 5px;
+  min-width: 75px;
 }
 
 #workspaces button {

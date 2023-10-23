@@ -17,15 +17,16 @@
     "sway/mode"
   ],
   "modules-center": [
-    "clock"
+    "sway/window"
   ],
   "modules-right": [
     "tray",
-    "group/hardware",
+    "pulseaudio",
+    // "group/hardware",
     "backlight",
     "network",
     "idle_inhibitor",
-    "pulseaudio"
+    "clock"
   ],
   "group/hardware": {
     "orientation": "horizontal",
@@ -146,6 +147,9 @@
   "sway/mode": {
     "format": "󰄾 {}",
     "tooltip": false
+  },
+  "sway/window": {
+    "max-length": 50
   },
   "sway/workspaces": {
     "format": "{name}",

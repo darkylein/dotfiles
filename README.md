@@ -128,3 +128,5 @@ ENV variables which are set before sway starts
 - Add file extensions to config files, where it's possible (.cfg, jsonc, etc.)
 - Give freerdp a try
 - Integrate QT5/6 theme
+- TODO: See max_render_time in sway(5)
+

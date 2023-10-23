@@ -1,21 +1,16 @@
-#
-### UI appearance
+# --------------------
+# UI appearance
+# --------------------
 
-#
 # Gaps
-#
 gaps inner 3
 gaps outer 3
 smart_gaps on
 
-#
 # Fonts
-#
 font pango:Sans Regular 12
 
-#
 #Border
-#
 #Workaround to get rid of titlebar
 default_border pixel 3
 hide_edge_borders --i3 smart

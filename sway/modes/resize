@@ -1,5 +1,6 @@
-### Resizing containers:
-
+# --------------------
+# Resizing containers
+# --------------------
 mode "Resize" {
     bindsym $left resize shrink width 10px
     bindsym $down resize grow height 10px

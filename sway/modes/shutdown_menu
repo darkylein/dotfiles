@@ -1,6 +1,8 @@
-### Sway shutdown menu
+# --------------------
+# Sway shutdown menu
+# --------------------
 
-set $mode_system System: (l) lock, (e) logout, (s) suspend, (r) reboot, (S) shutdown, (R) UE>
+set $mode_system System: (l) lock, (e) logout, (s) suspend, (r) reboot, (S) shutdown, (R) UEFI
 mode "$mode_system" {
     bindsym l mode "default", exec "$locking"
     bindsym e exec loginctl terminate-user $USER

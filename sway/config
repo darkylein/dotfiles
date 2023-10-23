@@ -1,174 +1,66 @@
-# Personal config inspired by default config and manjaro sway config
-# You can find other configs which will be inlcuded in config.d/
+# --------------------
+# Custom variables (Sway)
+# --------------------
 
-# Default variables
-include /etc/sway/config-vars.d/*
+# Logo key. Use Mod1 for Alt.
+    set $mod Mod4
 
-# Custom variables
-## Logo key. Use Mod1 for Alt.
-set $mod Mod4
+# Direction keys
+    set $left Left
+    set $down Down
+    set $up Up
+    set $right Right
 
-## Direction keys
-set $left Left
-set $down Down
-set $up Up
-set $right Right
+# Alternative direction keys
+    set $left_alt h
+    set $down_alt j
+    set $up_alt k
+    set $right_alt l
 
-## Alternative direction keys
-set $left_alt h
-set $down_alt j
-set $up_alt k
-set $right_alt l
+# --------------------
+# Default apps
+# --------------------
 
-## Default apps
-## Terminal emulator
-set $term alacritty
-## Application launcher
-set $menu fuzzel
-## File manager
-set $file_manager thunar
+# Terminal
+    set $term alacritty
 
-## Wallpaper (background and lockscreen)
-set $wallpaper ~/Pictures/wallpaper/anime_girl_04.jpg
+# Menu
+    set $menu fuzzel
 
-## Wallpaper lockscreen
-set $wallpaper_lockscreen ~/Pictures/wallpaper/anime_train_05.png
+# File-Manager
+    set $file_manager thunar
 
-## Lockscreen configuration
-set $locking swaylock -f -i $wallpaper_lockscreen
+# --------------------
+# Wallpaper
+# --------------------
 
-### Audio control
-set $sink_volume pactl get-sink-volume @DEFAULT_SINK@ | grep '^Volume:' | cut -d / -f 2 | tr -d ' ' | sed 's/%//'
-set $source_volume pactl get-source-volume @DEFAULT_SOURCE@ | grep '^Volume:' | cut -d / -f 2 | tr -d ' ' | sed 's/%//'
-set $volume_down pactl set-sink-volume @DEFAULT_SINK@ -5%
-set $volume_up pactl set-sink-volume @DEFAULT_SINK@ +5%
-set $volume_mute pactl set-sink-mute @DEFAULT_SINK@ toggle && pactl get-sink-mute @DEFAULT_SINK@ | sed -En "/no/ s/.*/$($sink_volume)/p; /yes/ s/.*/0/p"
-set $mic_mute pactl set-source-mute @DEFAULT_SOURCE@ toggle && pactl get-source-mute @DEFAULT_SOURCE@ | sed -En "/no/ s/.*/$($source_volume)/p; /yes/ s/.*/0/p"
+# Background
+    set $wallpaper_background ~/Pictures/wallpaper/anime_girl_04.jpg
 
-### Idle configuration
-# This will lock your screen after 300 seconds of inactivity, then turn off
-# your displays after another 300 seconds, and turn your screens back on when
-# resumed. It will also lock your screen before your computer goes to sleep.
-exec swayidle -w timeout 300 '$locking' timeout 600 'swaymsg "output * dpms off"' resume 'swaymsg "output * dpms on"' before-sleep '$locking'
+# Lockscreen
+    set $wallpaper_lockscreen ~/Pictures/wallpaper/anime_train_05.png
 
-### Set GTK theme
-exec_always ~/dotfiles/gtk/gtk.sh
+# --------------------
+# Misc
+# --------------------
 
-### Key bindings
-#
-# Basics:
-#
-    # Start a terminal
-    bindsym $mod+Return exec $term
+# Lockscreen configuration
+    set $locking swaylock -f -i $wallpaper_lockscreen
 
-    # Kill focused window
-    bindsym $mod+Shift+q kill
+# Idle configuration
+    exec swayidle -w timeout 300 '$locking' timeout 600 'swaymsg "output * dpms off"' resume 'swaymsg "output * dpms on"' before->
 
-    # Start your launcher
-    bindsym $mod+d exec $menu
+# Set GTK theme
+    exec_always ~/dotfiles/gtk/gtk.sh
 
-    # Drag floating windows by holding down $mod and left mouse button.
-    # Resize them with right mouse button + $mod.
-    # Despite the name, also works for non-floating windows.
-    # Change normal to inverse to use left mouse button for resizing and right
-    # mouse button for dragging.
-    floating_modifier $mod normal
+# Audio control
+    set $sink_volume pactl get-sink-volume @DEFAULT_SINK@ | grep '^Volume:' | cut -d / -f 2 | tr -d ' ' | sed 's/%//'
+    set $source_volume pactl get-source-volume @DEFAULT_SOURCE@ | grep '^Volume:' | cut -d / -f 2 | tr -d ' ' | sed 's/%//'
+    set $volume_down pactl set-sink-volume @DEFAULT_SINK@ -5%
+    set $volume_up pactl set-sink-volume @DEFAULT_SINK@ +5%
+    set $volume_mute pactl set-sink-mute @DEFAULT_SINK@ toggle && pactl get-sink-mute @DEFAULT_SINK@ | sed -En "/no/ s/.*/$($sink_volume)/p; /yes/ s/.*/0/p"
+    set $mic_mute pactl set-source-mute @DEFAULT_SOURCE@ toggle && pactl get-source-mute @DEFAULT_SOURCE@ | sed -En "/no/ s/.*/$($source_volume)/p; /yes/ s/.*/0/p"
 
-    # Reload the configuration file
-    bindsym $mod+Shift+c reload
-
-    # Exit sway (logs you out of your Wayland session)
-    #bindsym $mod+Shift+e exec swaynag -t warning -m 'You pressed the exit shortcut. Do you really want to exit sway? This will end your Wayland session.' -B 'Yes, exit sway' 'swaymsg exit'
-#
-# Moving around:
-#
-    # Move your focus around
-    bindsym $mod+$left focus left
-    bindsym $mod+$down focus down
-    bindsym $mod+$up focus up
-    bindsym $mod+$right focus right
-    # Or use $mod+[up|down|left|right]
-    bindsym $mod+$left_alt focus left
-    bindsym $mod+$down_alt focus down
-    bindsym $mod+$up_alt focus up
-    bindsym $mod+$right_alt focus right
-
-    # Move the focused window with the same, but add Shift
-    bindsym $mod+Shift+$left move left
-    bindsym $mod+Shift+$down move down
-    bindsym $mod+Shift+$up move up
-    bindsym $mod+Shift+$right move right
-    # Ditto, with arrow keys
-    bindsym $mod+Shift+$left_alt move left
-    bindsym $mod+Shift+$down_alt move down
-    bindsym $mod+Shift+$up_alt move up
-    bindsym $mod+Shift+$right_alt move right
-#
-# Workspaces:
-#
-    # Switch to workspace
-    bindsym $mod+1 workspace number 1
-    bindsym $mod+2 workspace number 2
-    bindsym $mod+3 workspace number 3
-    bindsym $mod+4 workspace number 4
-    bindsym $mod+5 workspace number 5
-    bindsym $mod+6 workspace number 6
-    bindsym $mod+7 workspace number 7
-    bindsym $mod+8 workspace number 8
-    bindsym $mod+9 workspace number 9
-    bindsym $mod+0 workspace number 10
-    # Move focused container to workspace
-    bindsym $mod+Shift+1 move container to workspace number 1
-    bindsym $mod+Shift+2 move container to workspace number 2
-    bindsym $mod+Shift+3 move container to workspace number 3
-    bindsym $mod+Shift+4 move container to workspace number 4
-    bindsym $mod+Shift+5 move container to workspace number 5
-    bindsym $mod+Shift+6 move container to workspace number 6
-    bindsym $mod+Shift+7 move container to workspace number 7
-    bindsym $mod+Shift+8 move container to workspace number 8
-    bindsym $mod+Shift+9 move container to workspace number 9
-    bindsym $mod+Shift+0 move container to workspace number 10
-    # Note: workspaces can have any name you want, not just numbers.
-    # We just use 1-10 as the default.
-#
-# Layout stuff:
-#
-    # You can "split" the current object of your focus with
-    # $mod+b or $mod+v, for horizontal and vertical splits
-    # respectively.
-    bindsym $mod+b splith
-    bindsym $mod+v splitv
-
-    # Switch the current container between different layout styles
-    bindsym $mod+s layout stacking
-    bindsym $mod+w layout tabbed
-    bindsym $mod+e layout toggle split
-
-    # Make the current focus fullscreen
-    bindsym $mod+f fullscreen
-
-    # Toggle the current focus between tiling and floating mode
-    bindsym $mod+Shift+space floating toggle
-
-    # Swap focus between the tiling area and the floating area
-    bindsym $mod+space focus mode_toggle
-
-    # Move focus to the parent container
-    bindsym $mod+a focus parent
-#
-# Scratchpad:
-#
-    # Sway has a "scratchpad", which is a bag of holding for windows.
-    # You can send windows there and get them back later.
-
-    # Move the currently focused window to the scratchpad
-    bindsym $mod+Shift+minus move scratchpad
-
-    # Show the next scratchpad window or hide the focused scratchpad window.
-    # If there are multiple scratchpad windows, this command cycles through them.
-    bindsym $mod+minus scratchpad show
-
-include $HOME/.config/sway/definitions
 include /etc/sway/config.d/*
 include $HOME/.config/sway/config.d/*
 include $HOME/.config/sway/modes/*

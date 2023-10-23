@@ -103,6 +103,7 @@ packagesPacman=(
     "ttf-nerd-fonts-symbols"
     "vlc"
     "waybar"
+    "xdg-desktop-portal" "xdg-desktop-portal-wlr" "xdg-desktop-portal-gtk"
     "xdg-user-dirs"
     "xorg-xwayland"
 );

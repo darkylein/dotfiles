@@ -40,7 +40,6 @@ Packages which are strictly required for this sway setup.
 These packages are not essential for the functionality of this custom sway setup and, therefore, are not installed by default.
 
 - Image/PDF Converter: ImageMagick
-- ghostscript (Required by ImageMagick to handle PDF files)
 - 2D Editor: Krita
 - Vector Graphic Editor: InkScape
 - Office Suite: LibreOffice (fresh)

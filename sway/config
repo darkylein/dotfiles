@@ -26,7 +26,7 @@ set $term alacritty
 ## Application launcher
 set $menu fuzzel
 ## File manager
-set $file_manager nemo
+set $file_manager thunar
 
 ## Wallpaper (background and lockscreen)
 set $wallpaper ~/Pictures/wallpaper/anime_girl_04.jpg

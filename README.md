@@ -72,6 +72,11 @@ psst-git
 sudo pacman -S steam
 ```
 
+### TeamSpeak3
+Theme/Icon-Pack source: https://github.com/randomhost/teamspeak-dark
+- Copy gfx and styles into ~/.ts3client direcory
+- Theme and Icon pack must be activated manually in client settings 
+
 ### Extended Controller Support (xpadneo)
 
 - Make sure, that the controller has current firmware (Update over Xbox Accessories app from Microsoft-Store)

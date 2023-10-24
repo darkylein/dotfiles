@@ -8,9 +8,8 @@
 
 * {
   border: none;
-  border-radius: 0;
-  font-family: Sans, serif;
-  font-size: 16px;
+  font-family: FiraMono Nerd Font, Regular;
+  font-size: 17px;
   box-shadow: none;
   text-shadow: none;
   transition-duration: 0s;
@@ -70,7 +69,7 @@ window {
 }
 
 #pulseaudio {
-  min-width: 75px;
+  min-width: 80px;
 }
 
 #workspaces button {

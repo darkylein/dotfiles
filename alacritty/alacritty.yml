@@ -9,15 +9,12 @@ scrolling:
 # Font configuration
 font:
   normal:
-    family: JetBrainsMono Nerd Font
+    family: FiraMono Nerd Font
     style: Regular
+  medium:
+    family: FiraMono Nerd Font
+    style: Medium
   bold:
-    family: JetBrainsMono Nerd Font
-    style: Bold
-  italic:
-    family: JetBrainsMono Nerd Font
-    style: Italic
-  bold_italic:
-    family: JetBrainsMono Nerd Font
-    style: Bold Italic
+    family: FiraMono Nerd Font
+    style: Bold 
   size: 13.0

@@ -23,20 +23,12 @@
     "tray",
     "pulseaudio",
     // "group/hardware",
-    // "backlight",
+    // "bluetooth",
     "network",
     "idle_inhibitor",
     "battery",
     "clock"
   ],
-  "group/hardware": {
-    "orientation": "horizontal",
-    "modules": [
-      "cpu",
-      "memory",
-      "disk"
-    ]
-  },
   "backlight": {
     "format": "{icon} {percent}%",
     "format-icons": [
@@ -47,7 +39,7 @@
     "on-scroll-up": "swaymsg exec '$brightness_up'"
     },
   "battery": {
-    "format": "{capacity}% {icon}",
+    "format": "{icon}",
     "format-icons": [
       "󰁺",
       "󰁻",
@@ -68,6 +60,9 @@
     },
     "tooltip": false
   },
+  // "bluetooth": {
+  //  
+  // },
   "clock": {
     "interval": 60,
     "format": "{:%a %d %b %H:%M}",
@@ -125,7 +120,6 @@
   },
   "pulseaudio": {
     "format": "{volume}% {icon} {format_source}",
-    "format-bluetooth": "{volume}% {icon}󰂯 {format_source}",
     "format-muted": "󰖁 {format_source}",
     "format-source": "󰍬",
     "format-source-muted": "󰍭",
@@ -143,10 +137,6 @@
     "on-scroll-up": "swaymsg exec '$volume_up'"
 
   },
-  "tray": {
-    "icon-size": 18,
-    "spacing": 3
-  },
   "sway/mode": {
     "format": "󰄾 {}",
     "tooltip": false
@@ -158,6 +148,18 @@
     "format": "{name}",
     "disable-scroll": true
   },
+  "tray": {
+    "icon-size": 18,
+    "spacing": 3
+  },
+  // "group/hardware": {
+  // "orientation": "horizontal",
+  //  "modules": [
+  //    "cpu",
+  //    "memory",
+  //    "disk"
+  //  ]
+  // },
   //"custom/wf-recorder": {
   //  "interval": "once",
   //  "return-type": "json",

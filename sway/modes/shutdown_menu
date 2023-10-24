@@ -2,14 +2,13 @@
 # Sway shutdown menu
 # --------------------
 
-set $mode_system System: (l) lock, (e) logout, (s) suspend, (r) reboot, (S) shutdown, (R) UEFI
+set $mode_system System: (l)ock, (e)xit, (s)uspend, (r)eboot, (S)hutdown
 mode "$mode_system" {
     bindsym l mode "default", exec "$locking"
     bindsym e exec loginctl terminate-user $USER
     bindsym s mode "default", exec "$locking; systemctl suspend"
     bindsym r exec systemctl reboot
     bindsym Shift+s exec systemctl poweroff
-    bindsym Shift+r exec systemctl reboot --firmware-setup
 
     # return to default mode
     bindsym Return mode "default"

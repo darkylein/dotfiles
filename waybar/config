@@ -58,7 +58,7 @@
       "warning": 30,
       "critical": 10
     },
-    "tooltip": false
+    "tooltip": true
   },
   // "bluetooth": {
   //  
@@ -93,7 +93,7 @@
       "activated": "󰈈",
       "deactivated": "󰈉"
     },
-    "tooltip": false
+    "tooltip": true
   },
   "memory": {
     "interval": 10,

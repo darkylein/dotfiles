@@ -93,6 +93,7 @@ packagesPacman=(
     "neovim"
     "polkit"
     "qt5ct" "qt6ct"
+    "pulsemixer"
     "starship"
     "sway"
     "swaybg"

@@ -2,6 +2,7 @@
 
 ## Common Packages
 
+- Audio Control: pulsemixer
 - Bluetooth Manager: blueman
 - Browser: LibreWolf
 - Console Font: JetBrainsMono Nerd Font

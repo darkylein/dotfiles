@@ -22,23 +22,56 @@
 # --------------------
 
 # Terminal
-    set $term alacritty
+set $term alacritty
 
-# Menu
-    set $menu fuzzel
+# Audio control
+set $audio_control $term -e pulsemixer
 
 # File-Manager
-    set $file_manager thunar
+set $file_manager thunar
+
+# Menu
+set $menu fuzzel
+
+# Network manager
+set $network_manager  $term -e nmtui
+
+# Resource monitor
+set $resource_monitor $term -e btop
 
 # --------------------
 # Wallpaper
 # --------------------
 
 # Background
-    set $wallpaper_background ~/Pictures/wallpaper/anime_girl_04.jpg
+set $wallpaper_background ~/Pictures/wallpaper/anime_girl_04.jpg
 
 # Lockscreen
-    set $wallpaper_lockscreen ~/Pictures/wallpaper/anime_train_05.png
+set $wallpaper_lockscreen ~/Pictures/wallpaper/anime_train_05.png
+
+# --------------------
+# Audio / Brightness control
+# --------------------
+
+# Setup WOB
+    set $WOBSOCK /tmp/wobpipe
+    exec rm -f $WOBSOCK && mkfifo $WOBSOCK && tail -f $WOBSOCK | wob
+
+# Audio control (Wireplumber)
+    set $sink_volume wpctl get-volume @DEFAULT_AUDIO_SINK@ | sed 's/[^0-9]//g'
+
+    # Volume
+    set $volume_down (wpctl get-volume @DEFAULT_AUDIO_SINK@ | grep -q MUTED && echo 0 > $WOBSOCK) || (wpctl set-volume @DEFAULT_AUDIO_SINK@ 5%- && wpctl get-volume @DEFAULT_AUDIO_SINK@ | sed 's/[^0-9]//g' > $WOBSOCK)
+    set $volume_up (wpctl get-volume @DEFAULT_AUDIO_SINK@ | grep -q MUTED && echo 0 > $WOBSOCK) || (wpctl set-volume @DEFAULT_AUDIO_SINK@ 5%+ && wpctl get-volume @DEFAULT_AUDIO_SINK@ | sed 's/[^0-9]//g' > $WOBSOCK)
+    set $volume_mute wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle && (wpctl get-volume @DEFAULT_AUDIO_SINK@ | grep -q MUTED && echo 0 > $WOBSOCK) || wpctl get-volume @DEFAULT_AUDIO_SINK@ | sed 's/[^0-9]//g' > $WOBSOCK
+
+    # Source
+    set $source_mute wpctl set-mute @DEFAULT_AUDIO_SOURCE@ toggle
+
+
+# Brightness control
+    set $brightness_down exec brightnessctl set 3%- | sed -En 's/.*\(([0-9]+)%\).*/\1/p' > $WOBSOCK
+    set $brightness_up exec brightnessctl set +3% | sed -En 's/.*\(([0-9]+)%\).*/\1/p' > $WOBSOCK
 
 # --------------------
 # Misc
@@ -52,14 +85,6 @@
 
 # Set GTK theme
     exec_always ~/dotfiles/gtk/gtk.sh
-
-# Audio control
-    set $sink_volume pactl get-sink-volume @DEFAULT_SINK@ | grep '^Volume:' | cut -d / -f 2 | tr -d ' ' | sed 's/%//'
-    set $source_volume pactl get-source-volume @DEFAULT_SOURCE@ | grep '^Volume:' | cut -d / -f 2 | tr -d ' ' | sed 's/%//'
-    set $volume_down pactl set-sink-volume @DEFAULT_SINK@ -5%
-    set $volume_up pactl set-sink-volume @DEFAULT_SINK@ +5%
-    set $volume_mute pactl set-sink-mute @DEFAULT_SINK@ toggle && pactl get-sink-mute @DEFAULT_SINK@ | sed -En "/no/ s/.*/$($sink_volume)/p; /yes/ s/.*/0/p"
-    set $mic_mute pactl set-source-mute @DEFAULT_SOURCE@ toggle && pactl get-source-mute @DEFAULT_SOURCE@ | sed -En "/no/ s/.*/$($source_volume)/p; /yes/ s/.*/0/p"
 
 include /etc/sway/config.d/*
 include $HOME/.config/sway/config.d/*

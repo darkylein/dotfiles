@@ -114,6 +114,7 @@ packagesPacman=(
 packagesYay=(
   "dracula-gtk-theme"
   "librewolf-bin"
+  "wob"
 );
 
 _installPackagesPacman "${packagesPacman[@]}";

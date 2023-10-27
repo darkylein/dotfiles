@@ -74,6 +74,7 @@ echo ""
 _installSymLink .bashrc ~/.bashrc ~/dotfiles/bash/.bashrc ~/.bashrc
 _installSymLink alacritty ~/.config/alacritty ~/dotfiles/alacritty/ ~/.config
 _installSymLink fuzzel ~/.config/fuzzel ~/dotfiles/fuzzel/ ~/.config
+_installSymLink wob ~/.config/wob ~/dotfiles/wob/ ~/.config
 
 echo "-------------------------------------"
 echo "-> Install GTK dotfiles"

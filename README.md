@@ -30,6 +30,7 @@ Packages which are strictly required for this sway setup.
 - Font Waybar: GNU Free Fonts
 - Icons: Nerd Fonts Symbols
 - polkit (Required on Arch, to grant sway access to your seat)
+- Wayland Overlay Bar: WOB 
 - Status Bar: waybar
 - Wayland Background Manager: swaybg
 - Wayland Idle Manager: swayidle

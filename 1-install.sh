@@ -112,8 +112,9 @@ packagesPacman=(
 );
 
 packagesYay=(
-  "dracula-gtk-theme"
   "librewolf-bin"
+  "nordic-darker-theme"
+  "sevi-icon-theme-full"
   "wob"
 );
 

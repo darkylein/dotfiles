@@ -8,7 +8,8 @@
 - Console Font: JetBrainsMono Nerd Font
 - Editor: nano, neovim
 - Filemanager: Thunar (Inclusive some essential plug ins)
-- GTK Theme: Dracula
+- GTK Theme: Nordic Darker
+- GTK Icon Theme: Sevi Grey Dark
 - Image Viewer: imv
 - Media Player: VLC Media Player
 - Menu: Fuzzel

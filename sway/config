@@ -84,7 +84,7 @@ set $wallpaper_lockscreen ~/Pictures/wallpaper/anime_train_05.png
     exec swayidle -w timeout 300 '$locking' timeout 600 'swaymsg "output * dpms off"' resume 'swaymsg "output * dpms on"' before->
 
 # Set GTK theme
-    exec_always ~/dotfiles/gtk/gtk.sh
+    exec_always ~/dotfiles/scripts/gtk.sh
 
 include /etc/sway/config.d/*
 include $HOME/.config/sway/config.d/*

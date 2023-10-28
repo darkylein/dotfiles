@@ -120,9 +120,54 @@ _installSymLink() {
         break;;
             [Nn]* )
                 echo ""
-                # exit;
             break;;
             * ) echo "Please answer yes or no.";;
         esac
     done
+}
+
+
+# ------------------------------------------------------
+# Function: Execute command (and ask nicely)
+# ------------------------------------------------------
+_execCommand() {
+    description="$1";
+    command="$2";
+
+    while true; do
+    read -r -p "DO YOU WANT TO ${description} NOW? (Yy/Nn): " yn
+    case $yn in
+        [Yy]* )
+            eval "$command"
+        break;;
+        [Nn]* )
+#          exit;
+        break;;
+        * ) echo "Please answer yes or no.";;
+    esac
+done
+}
+
+# ------------------------------------------------------
+# Function: Enable daemons
+# ------------------------------------------------------
+_enableDaemons() {
+  description="$1";
+  command="$2";
+
+  while true; do
+  read -r -p "DO YOU WANT TO enable daemons NOW? (Yy/Nn): " yn
+  case $yn in
+    [Yy]* )
+      for daemon; do
+        sudo systemctl enable "$daemon".service
+        echo "Daemon $daemon enabled"
+  done;
+    break;;
+    [Nn]* )
+#      exit;
+    break;;
+    * ) echo "Please answer yes or no.";;
+  esac
+done
 }

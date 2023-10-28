@@ -87,22 +87,17 @@ Theme/Icon-Pack source: https://github.com/randomhost/teamspeak-dark
 
 ## Tweaks
 
-Tweaks which are currently NOT integrated into the install-script.
+Tweaks which are implemented into the tweaks script
 
-- Acivate and set parallel downloads for pacman to value 10
-```bash
-sudo sed -i 's/^#ParallelDownloads = 5/ParallelDownloads = 10/' /etc/pacman.conf
-```
+- Activate parallel downloads for pacman with 10 streams
+- Disable system beep
+- Enable daemons
+  - bluetooth
+  - NetworkManager
 
-- Disable system beep sound (Only on lenovo laptop)
-```bash
-echo "blacklist pcspkr" | sudo tee /etc/modprobe.d/nobeep.conf
-```
+## Tweaks (manual)
 
-### Daemons to be enabled
-- bluetooth
-- NetworkManager
-
+Tweaks which are currently NOT implemented into the tweaks script
 
 ## Arch Installation
 

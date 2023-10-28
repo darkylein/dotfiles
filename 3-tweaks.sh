@@ -1,0 +1,50 @@
+#!/bin/bash
+#  _____                    _
+# |_   _|_      _____  __ _| | _____
+#  | | \ \ /\ / / _ \/ _' | |/ / __|
+#  | |  \ V  V /  __/ (_| |   <\__ \
+#  |_|   \_/\_/ \___|\__,_|_|\_\___/
+#
+# by darkylein (2023)
+# -----------------------------------------------------
+# Some tweaks which may increase your experience
+# ------------------------------------------------------
+
+# ------------------------------------------------------
+# Load Library
+# ------------------------------------------------------
+source "$(dirname "$0")/scripts/library.sh"
+#clear
+echo " _____                    _"
+echo "|_   _|_      _____  __ _| | _____"
+echo "  | | \ \ /\ / / _ \/ _' | |/ / __|"
+echo "  | |  \ V  V /  __/ (_| |   <\__ \ "
+echo "  |_|   \_/\_/ \___|\__,_|_|\_\___/"
+echo ""
+echo "by darkylein (2023)"
+echo "-------------------------------------"
+echo ""
+
+# ------------------------------------------------------
+# Run Tweaks
+# ------------------------------------------------------
+
+# Activate parallel download for pacman
+_execCommand "Activate parallel download for pacman" "sudo sed -i 's/^#ParallelDownloads = 5/ParallelDownloads = 10/' /etc/pacman.conf"
+
+# Disable system beeper
+_execCommand "Disable system beeper" "echo -e 'blacklist pcspkr\nblacklist snd_pcsp' | sudo tee /etc/modprobe.d/nobeep.conf"
+
+# Enable daemons
+
+daemons=(
+    "bluetooth"
+    "NetworkManager"
+)
+_enableDaemons "${daemons[@]}";
+
+# ------------------------------------------------------
+# DONE
+# ------------------------------------------------------
+echo "DONE!"
+echo "NEXT: Please logout and reboot your system!"

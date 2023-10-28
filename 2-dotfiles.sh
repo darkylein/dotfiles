@@ -99,4 +99,4 @@ _installSymLink waybar ~/.config/waybar ~/dotfiles/waybar/ ~/.config
 # DONE
 # ------------------------------------------------------
 echo "DONE!"
-echo "NEXT: Please logout and reboot your system!"
+echo "NEXT: Please continue with 3-tweaks.sh"

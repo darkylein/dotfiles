@@ -107,6 +107,7 @@
   },
   "network": {
     "format": "{icon}",
+    "interval": 15,
     "on-click": "swaymsg exec '$network_manager'",
     "format-icons": {
       "ethernet": "󰈀",

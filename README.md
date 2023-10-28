@@ -94,11 +94,6 @@ Tweaks which are currently NOT integrated into the install-script.
 sudo sed -i 's/^#ParallelDownloads = 5/ParallelDownloads = 10/' /etc/pacman.conf
 ```
 
-- Disable comprehension of AUR packages after install
-```bash
-echo -e "PKGEXT='.pkg.tar'\nSRCEXT='.src.tar'" >> ~/.makepkg.conf
-```
-- 
 - Disable system beep sound (Only on lenovo laptop)
 ```bash
 echo "blacklist pcspkr" | sudo tee /etc/modprobe.d/nobeep.conf
@@ -133,4 +128,3 @@ ENV variables which are set before sway starts
 - Give freerdp a try
 - Integrate QT5/6 theme
 - TODO: See max_render_time in sway(5)
-

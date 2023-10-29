@@ -124,3 +124,4 @@ ENV variables which are set before sway starts
 - Integrate QT5/6 theme
 - TODO: See max_render_time in sway(5)
 - Setup nvim + ranger
+- test

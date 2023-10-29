@@ -101,7 +101,7 @@ packagesPacman=(
     "swaybg"
     "swayidle"
     "swaylock"
-    "thunar" "gvfs" "thunar-volman" "thunar-archive-plugin" "xarchiver" "tumbler"
+    "pcmanfm-gtk3" "gvfs" "xarchiver" "tumbler"
     "ttf-jetbrains-mono-nerd"
     "ttf-nerd-fonts-symbols"
     "vlc"

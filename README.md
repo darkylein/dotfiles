@@ -7,7 +7,7 @@
 - Browser: LibreWolf
 - Console Font: JetBrainsMono Nerd Font
 - Editor: nano, neovim
-- Filemanager: Thunar (Inclusive some essential plug ins)
+- File Manager: PCManFM
 - GTK Theme: Nordic Darker
 - GTK Icon Theme: Sevi Grey Dark
 - Image Viewer: imv

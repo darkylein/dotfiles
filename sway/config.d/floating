@@ -1,7 +1,0 @@
-# --------------------
-# Application-specific rules for floating mode
-# --------------------
-# for_window [app_id="<app-id>"] floating enable
-
-# Pavucontrol
-for_window [app_id="pavucontrol"] floating enable

@@ -1,91 +1,10 @@
-# --------------------
-# Custom variables (Sway)
-# --------------------
+# Sway config
 
-# Logo key. Use Mod1 for Alt.
-    set $mod Mod4
-
-# Direction keys
-    set $left Left
-    set $down Down
-    set $up Up
-    set $right Right
-
-# Alternative direction keys
-    set $left_alt h
-    set $down_alt j
-    set $up_alt k
-    set $right_alt l
-
-# --------------------
-# Default apps
-# --------------------
-
-# Terminal
-set $term alacritty
-
-# Audio control
-set $audio_control $term -e pulsemixer
-
-# File-Manager
-set $file_manager thunar
-
-# Menu
-set $menu fuzzel
-
-# Network manager
-set $network_manager  $term -e nmtui
-
-# Resource monitor
-set $resource_monitor $term -e btop
-
-# --------------------
-# Wallpaper
-# --------------------
-
-# Background
-set $wallpaper_background ~/Pictures/wallpaper/anime_girl_04.jpg
-
-# Lockscreen
-set $wallpaper_lockscreen ~/Pictures/wallpaper/anime_train_05.png
-
-# --------------------
-# Audio / Brightness control
-# --------------------
-
-# Setup WOB
-    set $WOBSOCK /tmp/wobpipe
-    exec rm -f $WOBSOCK && mkfifo $WOBSOCK && tail -f $WOBSOCK | wob
-
-# Audio control (Wireplumber)
-    set $sink_volume wpctl get-volume @DEFAULT_AUDIO_SINK@ | sed 's/[^0-9]//g'
-
-    # Volume
-    set $volume_down (wpctl get-volume @DEFAULT_AUDIO_SINK@ | grep -q MUTED && echo 0 > $WOBSOCK) || (wpctl set-volume @DEFAULT_AUDIO_SINK@ 5%- && wpctl get-volume @DEFAULT_AUDIO_SINK@ | sed 's/[^0-9]//g' > $WOBSOCK)
-    set $volume_up (wpctl get-volume @DEFAULT_AUDIO_SINK@ | grep -q MUTED && echo 0 > $WOBSOCK) || (wpctl set-volume @DEFAULT_AUDIO_SINK@ 5%+ && wpctl get-volume @DEFAULT_AUDIO_SINK@ | sed 's/[^0-9]//g' > $WOBSOCK)
-    set $volume_mute wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle && (wpctl get-volume @DEFAULT_AUDIO_SINK@ | grep -q MUTED && echo 0 > $WOBSOCK) || wpctl get-volume @DEFAULT_AUDIO_SINK@ | sed 's/[^0-9]//g' > $WOBSOCK
-
-    # Source
-    set $source_mute wpctl set-mute @DEFAULT_AUDIO_SOURCE@ toggle
-
-
-# Brightness control
-    set $brightness_down exec brightnessctl set 3%- | sed -En 's/.*\(([0-9]+)%\).*/\1/p' > $WOBSOCK
-    set $brightness_up exec brightnessctl set +3% | sed -En 's/.*\(([0-9]+)%\).*/\1/p' > $WOBSOCK
-
-# --------------------
-# Misc
-# --------------------
-
-# Lockscreen configuration
-    set $locking swaylock -f -i $wallpaper_lockscreen
-
-# Idle configuration
-    exec swayidle -w timeout 300 '$locking' timeout 600 'swaymsg "output * dpms off"' resume 'swaymsg "output * dpms on"' before->
-
-# Set GTK theme
-    exec_always ~/dotfiles/scripts/gtk.sh
-
+# Include default config
 include /etc/sway/config.d/*
-include $HOME/.config/sway/config.d/*
+
+# Include configs
+include $HOME/.config/sway/config.d/*.conf
+
+# Include sway modes
 include $HOME/.config/sway/modes/*

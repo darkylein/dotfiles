@@ -1,6 +1,4 @@
-# --------------------
 # Key bindings
-# --------------------
 
 # Basics
     # Start a terminal
@@ -99,16 +97,7 @@
     bindsym $mod+a focus parent
 
 # Scratchpad
-    # Sway has a "scratchpad", which is a bag of holding for windows.
-    # You can send windows there and get them back later.
-
-    # Move the currently focused window to the scratchpad
-    bindsym $mod+Shift+minus move scratchpad
-
-    # Show the next scratchpad window or hide the focused scratchpad window.
-    # If there are multiple scratchpad windows, this command cycles through them.
-    bindsym $mod+minus scratchpad show
-
+# I don't use it yet, so it is not implemented.
 
 # Volume control
     # --locked flags allow the buttons to be used whilst the screen is locked.
@@ -121,11 +110,11 @@
 
     bindsym XF86AudioMicMute exec $source_mute
 
-    bindsym --locked XF86AudioPlay exec playerctl play-pause
+    bindsym --locked XF86AudioPlay exec $player_play_pause_toggle
 
-    bindsym --locked XF86AudioNext exec playerctl next
+    bindsym --locked XF86AudioNext exec $player_next
 
-    bindsym --locked XF86AudioPrev exec playerctl previous
+    bindsym --locked XF86AudioPrev exec $player_previous
 
 # Brightness control
     bindsym --locked XF86MonBrightnessUp exec "$brightness_up"

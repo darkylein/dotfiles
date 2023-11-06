@@ -92,6 +92,7 @@ packagesPacman=(
     "networkmanager"
     "nano"
     "neovim"
+    "nfs-utils"
     "otf-firamono-nerd"
     "polkit"
     "qt5ct" "qt6ct"

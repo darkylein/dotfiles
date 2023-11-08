@@ -61,7 +61,11 @@
 }
 
 window {
-  background: rgba(0, 0, 0, 0);
+  background: rgba(46, 52, 64, 1);
+}
+
+window#waybar.empty {
+  background-color: transparent;
 }
 
 #clock {

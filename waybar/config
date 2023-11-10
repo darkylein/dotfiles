@@ -58,7 +58,7 @@
       "warning": 30,
       "critical": 10
     },
-    "tooltip": true
+    "tooltip-format": "{capacity}%"
   },
   // "bluetooth": {
   //  

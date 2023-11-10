@@ -115,7 +115,7 @@
       "wifi": "󰖩",
       "disconnected": ""
     },
-    "tooltip-format-wifi": "{ipaddr}/{cidr} ({signalStrength}%)",
+    "tooltip-format-wifi": "{ipaddr}/{cidr}",
     "tooltip-format-ethernet": "{ipaddr}/{cidr}",
     "tooltip-format-disconnected": "Disconnected",
     "max-length": 50

@@ -87,7 +87,7 @@ window#waybar.empty {
 
 #workspaces button.focused {
   color: rgba(255, 255, 255, 1);
-  border-top: 3px solid rgba(217, 216, 216, 1);
+  border-top: 3px solid rgba(76, 86, 106, 1);
 }
 
 #workspaces button.urgent {

@@ -72,7 +72,7 @@ psst-git
 
 - Choose vulkan-radeon and than lib32-vulkan-radeon in installation
 ```bash
-sudo pacman -S steam lib32-vulkan-radeon
+sudo pacman -S steam
 ```
 
 ### TeamSpeak3

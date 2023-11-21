@@ -107,6 +107,7 @@ packagesPacman=(
     "vlc"
     "vulkan-radeon" "lib32-vulkan-radeon"
     "waybar"
+    "wl-clipboard"
     "xdg-desktop-portal" "xdg-desktop-portal-wlr" "xdg-desktop-portal-gtk"
     "xdg-user-dirs"
     "xorg-xwayland"

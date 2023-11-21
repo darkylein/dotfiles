@@ -69,6 +69,9 @@ yay -S \
 psst-git
 ```
 
+### Neovim
+- run kickstarter script from https://github.com/nvim-lua/kickstart.nvim
+
 ### Steam
 
 - Choose vulkan-radeon and than lib32-vulkan-radeon in installation

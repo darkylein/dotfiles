@@ -37,7 +37,7 @@
 #disk.critical,
 #memory.critical,
 #temperature.critical {
-  color: rgba(238, 46, 36, 1);;
+  color:rgba(238, 46, 36, 1);
 }
 
 #battery.warning,
@@ -50,6 +50,7 @@
 }
 
 #clock,
+#bluetooth,
 #hardware,
 #network,
 #idle_inhibitor,

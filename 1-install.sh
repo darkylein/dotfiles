@@ -110,10 +110,11 @@ packagesPacman=(
 );
 
 packagesYay=(
-  "librewolf-bin"
-  "nordic-darker-theme"
-  "sevi-icon-theme-full"
-  "wob"
+    "bluetuith"
+    "librewolf-bin"
+    "nordic-darker-theme"
+    "sevi-icon-theme-full"
+    "wob"
 );
 
 _installPackagesPacman "${packagesPacman[@]}";

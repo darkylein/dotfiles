@@ -32,6 +32,14 @@
   padding-right: 8px;
 }
 
+#battery.critical,
+#cpu.critical,
+#disk.critical,
+#memory.critical,
+#temperature.critical {
+  color: rgba(238, 46, 36, 1);;
+}
+
 #battery.warning,
 #cpu.warning,
 #disk.warning,
@@ -39,14 +47,6 @@
 #network.disconnected,
 #pulseaudio.muted {
   color: rgba(255, 210, 4, 1);
-}
-
-#battery.critical,
-#cpu.critical,
-#disk.critical,
-#memory.critical,
-#temperature.critical {
-  color: rgba(238, 46, 36, 1);
 }
 
 #clock,

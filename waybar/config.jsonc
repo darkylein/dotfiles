@@ -1,8 +1,4 @@
-// =============================================================================
-//
 // Waybar configuration
-//
-// Configuration reference: https://github.com/Alexays/Waybar/wiki/Configuration
 //
 // For display of symbols font ttf-nerd-fonts-symbols is required
 //
@@ -22,8 +18,6 @@
   "modules-right": [
     "tray",
     "pulseaudio",
-    // "group/hardware",
-    // "bluetooth",
     "network",
     "idle_inhibitor",
     "battery",
@@ -60,9 +54,6 @@
     },
     "tooltip-format": "{capacity}%"
   },
-  // "bluetooth": {
-  //  
-  // },
   "clock": {
     "interval": 60,
     "format": "{:%H:%M}",
@@ -154,22 +145,14 @@
     "icon-size": 18,
     "spacing": 3
   },
-  // "group/hardware": {
-  // "orientation": "horizontal",
-  //  "modules": [
-  //    "cpu",
-  //    "memory",
-  //    "disk"
-  //  ]
-  // },
-  //"custom/wf-recorder": {
-  //  "interval": "once",
-  //  "return-type": "json",
-  //  "format": "{}",
-  //  "tooltip-format": "{tooltip}",
-  //  "exec": "echo '{\"class\": \"recording\",\"text\":\"󰑊\",\"tooltip\":\"press $mod+Esc to stop recording\"}'",
-  //  "exec-if": "pgrep wf-recorder",
-  //  "on-click": "killall -s SIGINT wf-recorder",
-  //  "signal": 8
-  //}
+  "custom/wf-recorder": {
+    "interval": "once",
+    "return-type": "json",
+    "format": "{}",
+    "tooltip-format": "{tooltip}",
+    "exec": "echo '{\"class\": \"recording\",\"text\":\"󰑊\",\"tooltip\":\"press $mod+Esc to stop recording\"}'",
+    "exec-if": "pgrep wf-recorder",
+    "on-click": "killall -s SIGINT wf-recorder",
+    "signal": 8
+  }
 }

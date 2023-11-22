@@ -1,0 +1,22 @@
+# --------------------
+# Record screen 
+# --------------------
+
+
+set $recorder ~/dotfiles/scripts/recorder.sh
+
+set $mode_recorder Recording: (r) recod (R) record with audio 
+mode "$mode_recorder" {
+    # Record selection
+    bindsym r exec $recorder, mode "default"
+    # Record selection plus audio
+    bindsym Shift+r exec $recorder -a, mode "default"
+
+    # Return to default mode
+    bindsym Return mode "default"
+    bindsym Escape mode "default"
+}
+bindsym $mod+Shift+r mode "$mode_recorder"
+
+# Force stop recoding mode
+bindsym $mod+Escape exec killall -s SIGINT wf-recorder

@@ -10,10 +10,11 @@
   "position": "bottom",
   "modules-left": [
     "sway/workspaces",
-    "sway/mode"
+    "sway/window"
   ],
   "modules-center": [
-    "sway/window"
+    "custom/wf-recorder",
+    "sway/mode"
   ],
   "modules-right": [
     "tray",
@@ -157,13 +158,13 @@
     "spacing": 3
   },
   "custom/wf-recorder": {
-    "interval": "once",
-    "return-type": "json",
-    "format": "{}",
-    "tooltip-format": "{tooltip}",
-    "exec": "echo '{\"class\": \"recording\",\"text\":\"󰑊\",\"tooltip\":\"press $mod+Esc to stop recording\"}'",
-    "exec-if": "pgrep wf-recorder",
-    "on-click": "killall -s SIGINT wf-recorder",
-    "signal": 8
+        "interval": "once",
+        "return-type": "json",
+        "format": "{}",
+        "tooltip-format": "{tooltip}",
+        "exec": "echo '{\"class\": \"recording\",\"text\":\"󰑊\",\"tooltip\":\"press $mod+Esc to stop recording\"}'",
+        "exec-if": "pgrep wf-recorder",
+        "on-click": "killall -s SIGINT wf-recorder",
+        "signal": 8
   }
 }

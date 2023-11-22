@@ -97,7 +97,7 @@ packagesPacman=(
     "qt5ct" "qt6ct"
     "pulsemixer"
     "starship"
-    "sway" "swaybg" "swayidle" "swaylock" "grim" "slurp" "wl-clipboard" "jq"
+    "sway" "swaybg" "swayidle" "swaylock" "grim" "slurp" "wl-clipboard" "jq" "wf-recorder"
     "pcmanfm-gtk3" "gvfs" "xarchiver" "tumbler" "nfs-utils" "gvfs-smb"
     "ttf-jetbrains-mono-nerd"
     "ttf-nerd-fonts-symbols"

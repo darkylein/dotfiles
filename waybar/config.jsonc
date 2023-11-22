@@ -142,6 +142,10 @@
     "on-scroll-up": "swaymsg exec '$volume_up'"
 
   },
+  "tray": {
+    "icon-size": 18,
+    "spacing": 3
+  },
   "sway/mode": {
     "format": "󰄾 {}",
     "tooltip": false
@@ -152,10 +156,6 @@
   "sway/workspaces": {
     "format": "{name}",
     "disable-scroll": true
-  },
-  "tray": {
-    "icon-size": 18,
-    "spacing": 3
   },
   "custom/wf-recorder": {
         "interval": "once",

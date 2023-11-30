@@ -13,6 +13,7 @@
 - Image Viewer: imv
 - Media Player: VLC Media Player
 - Menu: Fuzzel
+- Mouse Settings Tool: Piper
 - Music Player: mpv
 - Network Manager: NetworkManager (nmcli/nmtui)
 - Wayland Notification Daemon: mako

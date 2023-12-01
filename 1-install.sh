@@ -99,7 +99,7 @@ packagesPacman=(
     "pulsemixer"
     "starship"
     "sway" "swaybg" "swayidle" "swaylock" "grim" "slurp" "wl-clipboard" "jq" "wf-recorder"
-    "pcmanfm-gtk3" "gvfs" "xarchiver" "tumbler" "nfs-utils" "gvfs-smb"
+    "pcmanfm-gtk3" "gvfs" "xarchiver" "tumbler" "nfs-utils" "gvfs-smb" "gvfs-gphoto2"
     "ttf-jetbrains-mono-nerd"
     "ttf-nerd-fonts-symbols"
     "vlc"

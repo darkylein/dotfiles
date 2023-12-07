@@ -5,7 +5,7 @@
 
 set $recorder ~/dotfiles/scripts/recorder.sh
 
-set $mode_recorder Recording: (r) recod (R) record with audio 
+set $mode_recorder Recording: (r) record (R) record with audio 
 mode "$mode_recorder" {
     # Record selection
     bindsym r exec $recorder, mode "default"

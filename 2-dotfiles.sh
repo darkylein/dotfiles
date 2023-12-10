@@ -73,6 +73,7 @@ echo ""
 
 _installSymLink .bashrc ~/.bashrc ~/dotfiles/bash/.bashrc ~/.bashrc
 _installSymLink alacritty ~/.config/alacritty ~/dotfiles/alacritty/ ~/.config
+_installSymLink btop ~/.config/btop ~/dotfiles/btop/ ~/.config
 _installSymLink fuzzel ~/.config/fuzzel ~/dotfiles/fuzzel/ ~/.config
 _installSymLink pacman ~/.config/pacman ~/dotfiles/pacman/ ~/.config
 _installSymLink starship ~/.config/starship ~/dotfiles/starship ~/.config

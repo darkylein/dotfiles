@@ -103,7 +103,7 @@ packagesPacman=(
     "ttf-jetbrains-mono-nerd"
     "ttf-nerd-fonts-symbols"
     "vlc"
-    "vulkan-radeon" "lib32-vulkan-radeon"
+    "mesa" "lib32-mesa" "vulkan-radeon" "lib32-vulkan-radeon"
     "waybar"
     "xdg-desktop-portal" "xdg-desktop-portal-wlr" "xdg-desktop-portal-gtk"
     "xdg-user-dirs"

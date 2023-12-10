@@ -1,4 +1,4 @@
-># dotfiles
+# dotfiles
 
 ## Common Packages
 
@@ -57,7 +57,7 @@ These packages are not essential for the functionality of this custom sway setup
 sudo pacman -S \
 figlet \
 imagemagick ghostscript \
-krita \
+krita krita-plugin-gmic \
 inkscape \
 libreoffice-fresh \
 telegram-desktop

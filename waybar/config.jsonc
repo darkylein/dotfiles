@@ -49,7 +49,7 @@
       "󰁹"
     ],
     "format-charging": "{capacity}% 󰂄",
-    "interval": 30,
+    "interval": 5,
     "states": {
       "warning": 30,
       "critical": 10
@@ -100,7 +100,7 @@
     "tooltip": true
   },
   "memory": {
-    "interval": 10,
+    "interval": 5,
     "format": "{}% ",
     "states": {
       "warning": 70,
@@ -111,7 +111,7 @@
   },
   "network": {
     "format": "{icon}",
-    "interval": 15,
+    "interval": 1,
     "on-click": "swaymsg exec '$network_manager'",
     "format-icons": {
       "ethernet": "󰈀",

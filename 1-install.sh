@@ -84,6 +84,7 @@ packagesPacman=(
     "dosfstools"
     "gtk2" "gtk3" "gtk4"
     "fuzzel"
+    "gamemode" "lib32-gamemode"
     "gnu-free-fonts"
     "imv"
     "keepassxc"

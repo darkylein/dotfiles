@@ -38,10 +38,18 @@ _execCommand "Disable system beeper" "echo -e 'blacklist pcspkr\nblacklist snd_p
 # Enable daemons
 
 daemons=(
-    "bluetooth"
-    "NetworkManager"
+    "bluetooth.service"
+    "NetworkManager.service"
 )
 _enableDaemons "${daemons[@]}";
+
+# Disable daemons
+
+daemons_disable=(
+    "systemd-networkd.service"
+    "systemd-networkd.socket"
+    )
+_disableDaemons "${daemons_disable[@]}";
 
 # ------------------------------------------------------
 # DONE

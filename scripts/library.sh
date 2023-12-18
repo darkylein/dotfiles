@@ -160,8 +160,30 @@ _enableDaemons() {
   case $yn in
     [Yy]* )
       for daemon; do
-        sudo systemctl enable "$daemon".service
+        sudo systemctl enable "$daemon"
         echo "Daemon $daemon enabled"
+  done;
+    break;;
+    [Nn]* )
+#      exit;
+    break;;
+    * ) echo "Please answer yes or no.";;
+  esac
+done
+}
+
+_disableDaemons() {
+  description="$1";
+  command="$2";
+
+  while true; do
+  read -r -p "DO YOU WANT TO disable and stop daemons NOW? (Yy/Nn): " yn
+  case $yn in
+    [Yy]* )
+      for daemon; do
+        sudo systemctl disable "$daemon"
+        sudo systemctl stop "$daemon"
+        echo "Daemon $daemon stopped and disabled"
   done;
     break;;
     [Nn]* )

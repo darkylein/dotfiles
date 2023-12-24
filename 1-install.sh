@@ -79,6 +79,7 @@ echo "-> Install main packages"
 
 packagesPacman=(
     "alacritty"
+    "bash-completion"
     "blueman"
     "btop"
     "dosfstools"

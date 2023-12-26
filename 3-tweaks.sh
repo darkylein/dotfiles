@@ -39,6 +39,7 @@ _execCommand "Disable system beeper" "echo -e 'blacklist pcspkr\nblacklist snd_p
 
 daemons=(
     "bluetooth.service"
+    "cups.socket"
     "NetworkManager.service"
 )
 _enableDaemons "${daemons[@]}";

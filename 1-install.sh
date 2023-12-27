@@ -117,6 +117,7 @@ packagesYay=(
     "bluetuith"
     "librewolf-bin"
     "nordic-darker-theme"
+    "spotify-player"
     "sevi-icon-theme-full"
     "wob"
 );

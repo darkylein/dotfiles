@@ -76,6 +76,7 @@ _installSymLink alacritty ~/.config/alacritty ~/dotfiles/alacritty/ ~/.config
 _installSymLink btop ~/.config/btop ~/dotfiles/btop/ ~/.config
 _installSymLink fuzzel ~/.config/fuzzel ~/dotfiles/fuzzel/ ~/.config
 _installSymLink pacman ~/.config/pacman ~/dotfiles/pacman/ ~/.config
+_installSymLink spotify-player ~/config/spotify-player ~/dotfiles/spotify-player ~/.config
 _installSymLink starship ~/.config/starship ~/dotfiles/starship ~/.config
 _installSymLink wob ~/.config/wob ~/dotfiles/wob/ ~/.config
 

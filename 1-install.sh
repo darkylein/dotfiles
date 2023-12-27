@@ -84,6 +84,7 @@ packagesPacman=(
     "btop"
     "cups"
     "dosfstools"
+    "gdu"
     "gtk2" "gtk3" "gtk4"
     "fuzzel"
     "gamemode" "lib32-gamemode"

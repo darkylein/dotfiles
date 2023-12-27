@@ -60,7 +60,8 @@ imagemagick ghostscript \
 krita krita-plugin-gmic \
 inkscape \
 libreoffice-fresh \
-telegram-desktop
+telegram-desktop \
+lutris
 ```
 
 ### Yay

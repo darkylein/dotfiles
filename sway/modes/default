@@ -106,7 +106,7 @@
 
     bindsym --locked XF86AudioLowerVolume exec $volume_down
 
-    bindsym --locked XF86AudioMute exec "$volume_mute && $source_mute"
+    bindsym --locked XF86AudioMute exec $volume_mute
 
     bindsym XF86AudioMicMute exec $source_mute
 
@@ -117,9 +117,9 @@
     bindsym --locked XF86AudioPrev exec $player_previous
 
 # Brightness control
-    bindsym --locked XF86MonBrightnessUp exec "$brightness_up"
+    bindsym --locked XF86MonBrightnessUp exec $brightness_up
 
-    bindsym --locked XF86MonBrightnessDown exec "$brightness_down"
+    bindsym --locked XF86MonBrightnessDown exec $brightness_down
 
 # Other
     # Power button

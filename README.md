@@ -21,7 +21,7 @@
 - Password Manager: KepassXC
 - Prompt: Starship
 - Resource Monitor: btop
-- Spotify Wrapper: psst
+- Spotify Wrapper: spotify-player (CLI)
 - Terminal: Alacritty
 - XDG user directories (Tool to create default directories in /home)
 

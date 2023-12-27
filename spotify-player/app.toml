@@ -8,7 +8,7 @@ notify_format = { summary = "{track} • {artists}", body = "{album}" }
 # copy_command = { command = "pbcopy", args = [] } # macos
 # copy_command = { command = "xclip", args = ["-sel", "c"] } # linux
 # copy_command = { command = "clip", args = [] } # windows
-app_refresh_duration_in_ms = 50
+app_refresh_duration_in_ms = 32
 playback_refresh_duration_in_ms = 0
 page_size_in_rows = 20
 enable_media_control = true

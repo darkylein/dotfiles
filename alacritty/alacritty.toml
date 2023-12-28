@@ -1,0 +1,12 @@
+import = [
+	"~/.config/alacritty/color-theme.toml"
+]
+
+[scrolling]
+history= 10000
+multiplier = 3
+
+[font]
+normal = { family = "FiraMono Nerd Font", style = "Regular" }
+bold = { family = "FiraMono Nerd Font", style = "Bold" }
+size = 13.0

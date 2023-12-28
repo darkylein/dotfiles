@@ -118,6 +118,7 @@ packagesYay=(
     "bluetuith"
     "librewolf-bin"
     "nordic-darker-theme"
+    "speedread-git"
     "spotify-player"
     "sevi-icon-theme-full"
     "wob"

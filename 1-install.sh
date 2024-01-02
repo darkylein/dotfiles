@@ -97,6 +97,7 @@ packagesPacman=(
     "nano"
     "neovim"
     "otf-firamono-nerd"
+    "pandoc"
     "piper"
     "polkit"
     "qt5ct" "qt6ct"

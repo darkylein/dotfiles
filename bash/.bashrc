@@ -10,5 +10,5 @@ eval "$(starship init bash)"
     . /usr/share/bash-completion/bash_completion
 
 # Aliases
-alias ls='ls --color=auto --group-directories-first'
+alias ls='ls -v --color=auto --group-directories-first'
 alias ll='ls -al'

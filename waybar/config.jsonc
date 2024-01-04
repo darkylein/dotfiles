@@ -137,7 +137,7 @@
     },
     "scroll-step": 5,
     "on-click": "swaymsg exec '$audio_control'",
-    "on-click-right": "swaymsg exec '$source_mute'",
+    "on-click-right": "swaymsg exec '$source_mute_toggle'",
     "on-scroll-down": "swaymsg exec '$volume_down'",
     "on-scroll-up": "swaymsg exec '$volume_up'"
 

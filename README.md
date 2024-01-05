@@ -1,5 +1,19 @@
 # dotfiles
 
+## Install
+
+- Clone repo into home directory
+- 
+```bash
+cd ~/dotfiles/; ./install.sh
+```
+
+# Start
+
+```bash
+starts.sh
+```
+
 ## Common Packages
 
 - Audio Control: pulsemixer

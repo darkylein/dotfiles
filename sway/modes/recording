@@ -3,7 +3,7 @@
 # --------------------
 
 
-set $recorder ~/dotfiles/scripts/recorder.sh
+set $recorder /usr/local/bin/recorder.sh
 
 set $mode_recorder Recording: (r) record (R) record with audio 
 mode "$mode_recorder" {

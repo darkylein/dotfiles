@@ -13,7 +13,7 @@
 # ------------------------------------------------------
 # Load Library
 # ------------------------------------------------------
-source "$(dirname "$0")/scripts/library.sh"
+source "$(dirname "$0")/library.sh"
 #clear
 echo " _____                    _"
 echo "|_   _|_      _____  __ _| | _____"
@@ -34,6 +34,9 @@ _execCommand "Activate parallel download for pacman" "sudo sed -i 's/^#ParallelD
 
 # Disable system beeper
 _execCommand "Disable system beeper" "echo -e 'blacklist pcspkr\nblacklist snd_pcsp' | sudo tee /etc/modprobe.d/nobeep.conf"
+
+# Copy binaries into /usr/local/bin
+_execCommand "Copy binaries into /usr/local/bin" "sudo cp -v -p "$(dirname "$0")/../bin"/* "/usr/local/bin""
 
 # Enable daemons
 

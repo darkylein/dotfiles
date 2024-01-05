@@ -13,7 +13,7 @@
 # ------------------------------------------------------
 # Load Library
 # ------------------------------------------------------
-source "$(dirname "$0")/scripts/library.sh"
+source "$(dirname "$0")/library.sh"
 #clear
 echo ""
 echo "  ____                        ___           _        _ _"

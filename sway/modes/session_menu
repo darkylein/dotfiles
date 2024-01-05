@@ -1,0 +1,17 @@
+# --------------------
+# Sway session menu
+# --------------------
+
+set $mode_session Session: (l)ock, (e)xit, (s)uspend, (r)eboot, (S)hutdown
+mode "$mode_session" {
+    bindsym l mode "default", exec "$locking"
+    bindsym e mode "default", exec "$exit"
+    bindsym s mode 'default', exec "$locking"; exec "$suspend"
+    bindsym r mode "default", exec "$reboot"
+    bindsym Shift+s mode "default", exec "$power_off"
+
+    # return to default mode
+    bindsym Return mode "default"
+    bindsym Escape mode "default"
+}
+bindsym $mod+Shift+e mode '$mode_session'

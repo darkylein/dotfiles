@@ -1,0 +1,4 @@
+### Misc ###
+librewolf-bin
+speedread-git
+spotify-player

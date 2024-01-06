@@ -112,3 +112,24 @@ _enableDaemons() {
         echo "Daemon $daemon enabled"
   done
 }
+
+_read_lines_from_file() {
+  local file="$1"
+  local result=()
+
+  # Check if the file exists
+  if [ ! -f "$file" ]; then
+    echo "Error: File '$file' not found."
+    return 1
+  fi
+
+  while IFS= read -r line; do
+    # Ignore empty lines and lines starting with #
+    if [ -n "$line" ] && [ "${line:0:1}" != "#" ]; then
+      result+=("$line")
+    fi
+  done < "$file"
+
+  # Return the result array
+  echo "${result[@]}"
+}

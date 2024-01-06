@@ -1,0 +1,5 @@
+### Sway dependencies ###
+bluetuith
+nordic-darker-theme
+sevi-icon-theme-full
+wob

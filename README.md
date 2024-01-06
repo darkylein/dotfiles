@@ -50,78 +50,18 @@ Packages which are strictly required for this sway setup.
 - Wayland Window Manager: sway
 - Wayland X Server: Xwayland
 
-## Additional Packages (Not installed automatically)
-
-These packages are not essential for the functionality of this custom sway setup and, therefore, are not installed by default.
-
-- Image/PDF Converter: ImageMagick
-- 2D Editor: Krita
-- Vector Graphic Editor: InkScape
-- Office Suite: LibreOffice (fresh)
-- Telegram
-
-### Pacman
-
-```bash
-sudo pacman -S \
-figlet \
-imagemagick ghostscript \
-krita krita-plugin-gmic \
-inkscape \
-libreoffice-fresh \
-telegram-desktop \
-lutris
-```
-
-### Yay
-
-```bash
-yay -S \
-psst-git
-```
 
 ### Neovim
 - run kickstarter script from https://github.com/nvim-lua/kickstart.nvim
 
-### Steam
-
-- Choose vulkan-radeon and than lib32-vulkan-radeon in installation
-```bash
-sudo pacman -S steam
-```
-
 ### TeamSpeak3
 Theme/Icon-Pack source: https://github.com/randomhost/teamspeak-dark
 - Copy gfx and styles into ~/.ts3client direcory
-- Theme and Icon pack must be activated manually in client settings 
+- Theme and Icon pack must be activated manually in client settings
 
-### Extended Controller Support (xpadneo)
+## Arch installation preferences
 
-- Make sure, that the controller has current firmware (Update over Xbox Accessories app from Microsoft-Store)
-- Run installation script from https://github.com/atar-axis/xpadneo
-
-## Tweaks
-
-Tweaks which are implemented into the tweaks script
-
-- Activate parallel downloads for pacman with 10 streams
-- Disable system beep
-- Enable daemons
-  - bluetooth
-  - NetworkManager
-- Disable daemons
-  - networkd (socket and daemon)
-
-## Arch Installation
-
-Tweaks which are specific to the arch linux installation.
-
-- Use the archinstall script for the installation
-
-## ENV Variables
-
-ENV variables which are set before sway starts
-- MOZ_ENABLE_WAYLAND=1 (Start LibreWolf in wayland mode)
+Use the archinstall script.
 
 ## TODO
 
@@ -137,4 +77,4 @@ ENV variables which are set before sway starts
 - Integrate QT5/6 theme
 - TODO: See max_render_time in sway(5)
 - Setup nvim + ranger
-- test
+- Add archinstall config

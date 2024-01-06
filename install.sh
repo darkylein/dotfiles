@@ -91,56 +91,7 @@ echo ""
 echo "==========================================="
 echo "=> Install packages..."
 
-packagesPacman=(
-    "alacritty"
-    "bash-completion"
-    "blueman"
-    "btop"
-    "cups"
-    "dosfstools"
-    "gdu"
-    "gtk2" "gtk3" "gtk4"
-    "fuzzel"
-    "gamemode" "lib32-gamemode"
-    "gnu-free-fonts"
-    "imv"
-    "keepassxc"
-    "mako"
-    "mpv"
-    "networkmanager"
-    "nano"
-    "neovim"
-    "otf-firamono-nerd"
-    "pandoc"
-    "piper"
-    "polkit"
-    "qt5ct" "qt6ct"
-    "pulsemixer"
-    "starship"
-    "sway" "swaybg" "swayidle" "swaylock" "grim" "slurp" "wl-clipboard" "jq" "wf-recorder"
-    "pcmanfm-gtk3" "gvfs" "xarchiver" "tumbler" "nfs-utils" "gvfs-smb" "gvfs-gphoto2"
-    "ttf-jetbrains-mono-nerd"
-    "ttf-nerd-fonts-symbols"
-    "vlc"
-    "mesa" "lib32-mesa" "vulkan-radeon" "lib32-vulkan-radeon"
-    "waybar"
-    "xdg-desktop-portal" "xdg-desktop-portal-wlr" "xdg-desktop-portal-gtk"
-    "xdg-user-dirs"
-    "xorg-xwayland"
-);
-
-packagesYay=(
-    "bluetuith"
-    "librewolf-bin"
-    "nordic-darker-theme"
-    "speedread-git"
-    "spotify-player"
-    "sevi-icon-theme-full"
-    "wob"
-);
-
-_installPackagesPacman "${packagesPacman[@]}";
-_installPackagesYay "${packagesYay[@]}";
+source "$(dirname "$0")/scripts/install_packages.sh"
 
 
 # Disable unused daemons

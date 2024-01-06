@@ -1,0 +1,11 @@
+### Packages ###
+keepassxc
+libreoffice-fresh
+lutris
+piper
+signal
+telegram-desktop
+
+# Krita
+krita
+krita-plugin-gmic

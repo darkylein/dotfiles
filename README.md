@@ -3,16 +3,11 @@
 ## Install
 
 - Clone repo into home directory
-- 
-```bash
-cd ~/dotfiles/; ./install.sh
-```
+- Run install script
 
 # Start
 
-```bash
-starts.sh
-```
+- Run startsway.sh script from anywhere
 
 ## Common Packages
 

@@ -46,26 +46,10 @@ echo "=> Copy startsway script into /usr/local/bin ..."
 
 sudo sudo cp -v -p "$(dirname "$0")"/scripts/startsway.sh "/usr/local/bin"
 
-
-# Install yay
+# Manage packages
 echo ""
 echo "==========================================="
-echo "=> Install yay..."
-
-if sudo pacman -Qs yay > /dev/null ; then
-    echo "yay is installed. You can proceed with the installation"
-else
-    echo "yay is not installed. Will be installed now!"
-    _installPackagesPacman "base-devel"
-    git clone https://aur.archlinux.org/yay.git /tmp/yay_install/
-    (cd /tmp/yay_install/ makepkg -si || exit)
-fi
-
-
-# Install packages
-echo ""
-echo "==========================================="
-echo "=> Install packages..."
+echo "=> Manage packages..."
 
 source "$(dirname "$0")/scripts/install_packages.sh"
 

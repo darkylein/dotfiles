@@ -52,7 +52,7 @@ echo ""
 echo "==========================================="
 echo "=> Copy startsway script into /usr/local/bin ..."
 
-sudo sudo cp -v -p "$(dirname "$0")"/startsway.sh "/usr/local/bin"
+sudo sudo cp -v -p "$(dirname "$0")"/scripts/startsway.sh "/usr/local/bin"
 
 
 # Install yay

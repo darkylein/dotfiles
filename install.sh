@@ -39,12 +39,20 @@ echo "=> Disable system beeper..."
 echo -e 'blacklist pcspkr\nblacklist snd_pcsp' | sudo tee /etc/modprobe.d/nobeep.conf
 
 
-# Copy binaries into /usr/local/bin
+# Copy binaries into /usr/local/bin/dotfiles
 echo ""
 echo "==========================================="
 echo "=> Copy binaries into /usr/local/bin/dotfiles ..."
 
 sudo mkdir /usr/local/bin/dotfiles; sudo cp -v -p "$(dirname "$0")/bin"/*.sh "/usr/local/bin/dotfiles"
+
+
+# Copy startsway script into /usr/local/bin to make it available in PATH
+echo ""
+echo "==========================================="
+echo "=> Copy startsway script into /usr/local/bin ..."
+
+sudo sudo cp -v -p "$(dirname "$0")"/startsway.sh "/usr/local/bin"
 
 
 # Install yay

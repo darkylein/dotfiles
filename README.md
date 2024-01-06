@@ -112,23 +112,6 @@ Tweaks which are implemented into the tweaks script
 - Disable daemons
   - networkd (socket and daemon)
 
-## Tweaks (manual)
-
-Tweaks which are currently NOT implemented into the tweaks script
-
-Allow mounting of internal drives by user if in group "wheel". Uses polkit.
-Just past following js snipit into /etc/polkit-1/rules.d/10-udisks.rules. This can be overriden by polkit package update.
-
-
-```javascript
-polkit.addRule(function(action, subject) {
-   if (action.id == "org.freedesktop.udisks2.filesystem-mount-system" && subject.isInGroup("wheel")) 
-    {
-       return polkit.Result.YES;
-    }
-});
-```
-
 ## Arch Installation
 
 Tweaks which are specific to the arch linux installation.

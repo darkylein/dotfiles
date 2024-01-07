@@ -4,6 +4,7 @@ libreoffice-fresh
 lutris
 piper
 signal
+steam
 telegram-desktop
 
 # Krita

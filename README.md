@@ -5,11 +5,14 @@
 - Clone repo into home directory
 - Run install script
 
-# Start
+## Start
 
 Simply run the startsway.sh script.
 
-## Common Packages
+## Packages
+
+Packages files are located under /packages.
+Packages in pacman.base.txt and yay.base.txt will be installed first. Packages in pacman.txt and yay.txt after.
 
 - Audio Control: pulsemixer
 - Bluetooth Manager: blueman

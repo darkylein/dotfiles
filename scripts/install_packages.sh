@@ -15,8 +15,8 @@ fi
 
 echo "=> Install base packages..."
 
-packagesPacmanBase=($(_read_lines_from_file "$(dirname "$0")/packages/packman_base.txt"))
-packagesYayBase=($(_read_lines_from_file "$(dirname "$0")/packages/yay_base.txt"))
+packagesPacmanBase=($(_read_lines_from_file "$(dirname "$0")/packages/pacman.base.txt"))
+packagesYayBase=($(_read_lines_from_file "$(dirname "$0")/packages/yay.base.txt"))
 
 _installPackagesPacman "${packagesPacmanBase[@]}";
 _installPackagesYay "${packagesYayBase[@]}";
@@ -24,7 +24,7 @@ _installPackagesYay "${packagesYayBase[@]}";
 
 echo "=> Install additional packages..."
 
-packagesPacman=($(_read_lines_from_file "$(dirname "$0")/packages/packman_base.txt"))
+packagesPacman=($(_read_lines_from_file "$(dirname "$0")/packages/pacman.txt"))
 packagesYay=($(_read_lines_from_file "$(dirname "$0")/packages/yay.txt"))
 
 _installPackagesPacman "${packagesPacman[@]}";

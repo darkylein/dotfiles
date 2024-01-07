@@ -7,7 +7,7 @@
 
 # Start
 
-- Run startsway.sh script from anywhere
+Simply run the startsway.sh script.
 
 ## Common Packages
 
@@ -50,6 +50,9 @@ Packages which are strictly required for this sway setup.
 - Wayland Window Manager: sway
 - Wayland X Server: Xwayland
 
+### Environment
+Environment variables are set in /bin/environment.sh. Feel free to add some more.
+The environment variables are only set if sway was started with swaystart.sh.
 
 ### Neovim
 - run kickstarter script from https://github.com/nvim-lua/kickstart.nvim
@@ -65,16 +68,10 @@ Use the archinstall script.
 
 ## TODO
 
-- Get inspired by Stephan Raabe's dotfiles (https://gitlab.com/stephan-raabe/dotfiles/-/tree/main)
-- Integrate notifications daemon mako to sway (https://github.com/emersion/mako)
-- Add soft background to modules in waybar
-- Integrate autostart sway with login (https://wiki.archlinux.org/title/Sway)
-- Extend arch Installation Tweaks AND save the archinstall script config in this project
-- Set ENV vars before sway start or in /etc/environment (https://wiki.archlinux.org/title/Environment_variables)
-- Add screenshots with grim & slurp & swappy to sway/waybar and maybe screen recording
-- Add file extensions to config files, where it's possible (.cfg, jsonc, etc.)
-- Give freerdp a try
-- Integrate QT5/6 theme
-- TODO: See max_render_time in sway(5)
-- Setup nvim + ranger
+- Add mako config for more beautiful notifications
+- Add archinstall config
+- Try out freerdp and add the package
+- Integrate QT5/6 themes
+- Configure ranger
+- Make Neovim optionally more IDE like to replace pycharm
 - Add archinstall config

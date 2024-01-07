@@ -14,45 +14,6 @@ Simply run the startsway.sh script.
 Packages files are located under /packages.
 Packages in pacman.base.txt and yay.base.txt will be installed first. Packages in pacman.txt and yay.txt after.
 
-- Audio Control: pulsemixer
-- Bluetooth Manager: blueman
-- Browser: LibreWolf
-- Console Font: JetBrainsMono Nerd Font
-- Editor: nano, neovim
-- File Manager: PCManFM
-- GTK Theme: Nordic Darker
-- GTK Icon Theme: Sevi Grey Dark
-- Image Viewer: imv
-- Media Player: VLC Media Player
-- Menu: Fuzzel
-- Mouse Settings Tool: Piper
-- Music Player: mpv
-- Network Manager: NetworkManager (nmcli/nmtui)
-- Wayland Notification Daemon: mako
-- Pacman Wrapper: yay
-- Password Manager: KepassXC
-- Prompt: Starship
-- Resource Monitor: btop
-- Spotify Wrapper: spotify-player (CLI)
-- Terminal: Alacritty
-- XDG user directories (Tool to create default directories in /home)
-
-## Window Manager (Sway)
-
-Packages which are strictly required for this sway setup.
-
-- Clipboard Tool: wl-clipboard
-- Font Waybar: GNU Free Fonts
-- Icons: Nerd Fonts Symbols
-- polkit (Required on Arch, to grant sway access to your seat)
-- Wayland Overlay Bar: WOB 
-- Status Bar: waybar
-- Wayland Background Manager: swaybg
-- Wayland Idle Manager: swayidle
-- Wayland Lock Manager: swaylock
-- Wayland Window Manager: sway
-- Wayland X Server: Xwayland
-
 ### Environment
 Environment variables are set in /bin/environment.sh. Feel free to add some more.
 The environment variables are only set if sway was started with swaystart.sh.

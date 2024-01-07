@@ -4,7 +4,6 @@ bash-completion
 btop
 cups
 fuzzel
-gnu-free-fonts
 grim
 gtk2
 gtk3
@@ -32,6 +31,7 @@ xdg-user-dirs
 xorg-xwayland
 
 # Fonts
+gnu-free-fonts
 otf-firamono-nerd
 ttf-jetbrains-mono-nerd
 ttf-nerd-fonts-symbols

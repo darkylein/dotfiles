@@ -69,8 +69,7 @@
   "clock": {
     "interval": 60,
     "format": "{:%H:%M}",
-    "tooltip-format": "{:%a %d %b}",
-    "on-click": "swaymsg exec '$calendar'"
+    "tooltip-format": "{:%a %d %b}"
   },
   "cpu": {
     "interval": 5,

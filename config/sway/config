@@ -3,8 +3,20 @@
 # Include default config
 include /etc/sway/config.d/*
 
+# Inlude definitions
+include $HOME/.config/sway/definitions.d/*.conf
+
 # Include configs
 include $HOME/.config/sway/config.d/*.conf
 
-# Include sway modes
+# Include inputs
+include $HOME/.config/sway/inputs/*.conf
+
+# Include outputs
+include $HOME/.config/sway/outputs/*.conf
+
+# Enable modes
 include $HOME/.config/sway/modes/*
+
+# only enable this if every app you use is compatible with wayland
+# xwayland disable
